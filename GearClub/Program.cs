@@ -1,4 +1,12 @@
+using Microsoft.AspNetCore.Identity;
+using Microsoft.EntityFrameworkCore;
+using GearClub.Data;
 var builder = WebApplication.CreateBuilder(args);
+var connectionString = builder.Configuration.GetConnectionString("GearClubContextConnection") ?? throw new InvalidOperationException("Connection string 'GearClubContextConnection' not found.");
+
+builder.Services.AddDbContext<GearClubContext>(options => options.UseSqlServer(connectionString));
+
+builder.Services.AddDefaultIdentity<ApplicationUser>(options => options.SignIn.RequireConfirmedAccount = true).AddEntityFrameworkStores<GearClubContext>();
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
