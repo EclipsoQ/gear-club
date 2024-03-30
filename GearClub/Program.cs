@@ -3,12 +3,15 @@ using Microsoft.EntityFrameworkCore;
 using GearClub.Data;
 using GearClub.Areas.Identity.Data;
 using Microsoft.Extensions.Options;
+using GearClub.Repositories;
+using GearClub.Models;
 
 var builder = WebApplication.CreateBuilder(args);
 var connectionString = builder.Configuration.GetConnectionString("GearClubContextConnection") ?? throw new InvalidOperationException("Connection string 'GearClubContextConnection' not found.");
 
 builder.Services.AddDbContext<GearClubContext>(options => options.UseSqlServer(connectionString));
 
+// Add Identity services and configurations
 builder.Services.AddDefaultIdentity<ApplicationUser>(options => options.SignIn.RequireConfirmedAccount = false).AddEntityFrameworkStores<GearClubContext>();
 
 builder.Services.Configure<IdentityOptions>(options =>
@@ -16,6 +19,10 @@ builder.Services.Configure<IdentityOptions>(options =>
     options.Password.RequireUppercase = false;
     options.Password.RequireNonAlphanumeric = false;
 });
+
+// Add Repositories 
+builder.Services.AddScoped<IRepository<Product>, ProductRepository>();
+
 // Add services to the container.
 builder.Services.AddControllersWithViews();
 builder.Services.AddRazorPages();

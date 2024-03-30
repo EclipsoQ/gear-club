@@ -1,4 +1,5 @@
 ﻿using GearClub.Areas.Identity.Data;
+using GearClub.Models;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
@@ -12,6 +13,7 @@ public class GearClubContext : IdentityDbContext<ApplicationUser>
     {
     }
 
+    public DbSet<Product> Products { get; set; }
     protected override void OnModelCreating(ModelBuilder builder)
     {
         base.OnModelCreating(builder);
