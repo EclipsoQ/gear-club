@@ -44,20 +44,17 @@
             </div>
             <div class="col-lg-6 text-center text-lg-right">
                 <div class="d-inline-flex align-items-center">
-                    <div class="btn-group">
+                    @* <div class="btn-group">
                         <button type="button" class="btn btn-sm btn-light dropdown-toggle" data-toggle="dropdown">
-                            Tài khoản
+                            My account
                         </button>
-                       
                         <div class="dropdown-menu dropdown-menu-right">
-                            <a href="/Identity/Account/Login" class="dropdown-item">Đăng nhập</a>
-                            <a href="/Identity/Account/Register" class="dropdown-item">Đăng ký</a>
-                            @* <button class="dropdown-item" type="button">                                
-                            </button>
-                            <button class="dropdown-item" type="button">Sign up</button> *@
+                            <a class="dropdown-item" id="register" asp-area="Identity" asp-page="/Account/Register">Register</a>
+                            <a class="dropdown-item" id="login" asp-area="Identity" asp-page="/Account/Login">Login</a>
                         </div>
-                    </div>
-                    <div class="btn-group mx-2">
+                    </div>    *@
+                    <partial name="/Views/Shared/_LoginPartial.cshtml"></partial>
+                    @* <div class="btn-group mx-2">
                         <button type="button" class="btn btn-sm btn-light dropdown-toggle" data-toggle="dropdown">USD</button>
                         <div class="dropdown-menu dropdown-menu-right">
                             <button class="dropdown-item" type="button">EUR</button>
@@ -72,7 +69,7 @@
                             <button class="dropdown-item" type="button">AR</button>
                             <button class="dropdown-item" type="button">RU</button>
                         </div>
-                    </div>
+                    </div> *@
                 </div>
                 <div class="d-inline-flex align-items-center d-block d-lg-none">
                     <a href="" class="btn px-0 ml-2">

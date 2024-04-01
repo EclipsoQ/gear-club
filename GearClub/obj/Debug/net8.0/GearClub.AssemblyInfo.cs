@@ -15,7 +15,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("GearClub")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6e1c65fb00639d58b6ce6d023f0144c515c12a22")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a9098bc5b007bc8894a2dbf0cc54a9ddec3a5b99")]
 [assembly: System.Reflection.AssemblyProductAttribute("GearClub")]
 [assembly: System.Reflection.AssemblyTitleAttribute("GearClub")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -12,12 +12,22 @@ var connectionString = builder.Configuration.GetConnectionString("GearClubContex
 builder.Services.AddDbContext<GearClubContext>(options => options.UseSqlServer(connectionString));
 
 // Add Identity services and configurations
-builder.Services.AddDefaultIdentity<ApplicationUser>(options => options.SignIn.RequireConfirmedAccount = false).AddEntityFrameworkStores<GearClubContext>();
+/*builder.Services.AddDefaultIdentity<ApplicationUser>(options => options.SignIn.RequireConfirmedAccount = false)
+    .AddEntityFrameworkStores<GearClubContext>();*/
+builder.Services.AddIdentity<ApplicationUser, IdentityRole>(options => options.SignIn.RequireConfirmedAccount = false)
+        .AddEntityFrameworkStores<GearClubContext>()
+        .AddDefaultTokenProviders();
 
 builder.Services.Configure<IdentityOptions>(options =>
-{
+{    
+    options.User.RequireUniqueEmail = true;
     options.Password.RequireUppercase = false;
-    options.Password.RequireNonAlphanumeric = false;
+    options.Password.RequireNonAlphanumeric = false;    
+});
+
+builder.Services.ConfigureApplicationCookie(options =>
+{
+    options.AccessDeniedPath = "/Views/Shared/AccessDeniedView";
 });
 
 // Add Repositories 

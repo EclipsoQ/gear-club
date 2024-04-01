@@ -80,6 +80,10 @@ namespace GearClub.Areas.Identity.Pages.Account
             [DataType(DataType.Text)]
             [Required]
             public string LastName { get; set; }
+            /*[Display(Name = "User Name")]
+            [DataType(DataType.Text)]
+            [Required]
+            public string UserName { get; set; }*/
 
             /// <summary>
             ///     This API supports the ASP.NET Core Identity default UI infrastructure and is not intended to be used

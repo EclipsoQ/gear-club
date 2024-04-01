@@ -5,6 +5,446 @@
       "PackagePath": "staticwebassets\\GearClub.bundle.scp.css"
     },
     {
+      "Id": "D:\\Programming\\BaiTap\\DoAn\\GearClub\\GearClub\\wwwroot\\AdminPage\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\AdminPage\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "D:\\Programming\\BaiTap\\DoAn\\GearClub\\GearClub\\wwwroot\\AdminPage\\css\\style.css",
+      "PackagePath": "staticwebassets\\AdminPage\\css\\style.css"
+    },
+    {
+      "Id": "D:\\Programming\\BaiTap\\DoAn\\GearClub\\GearClub\\wwwroot\\AdminPage\\img\\testimonial-1.jpg",
+      "PackagePath": "staticwebassets\\AdminPage\\img\\testimonial-1.jpg"
+    },
+    {
+      "Id": "D:\\Programming\\BaiTap\\DoAn\\GearClub\\GearClub\\wwwroot\\AdminPage\\img\\testimonial-2.jpg",
+      "PackagePath": "staticwebassets\\AdminPage\\img\\testimonial-2.jpg"
+    },
+    {
+      "Id": "D:\\Programming\\BaiTap\\DoAn\\GearClub\\GearClub\\wwwroot\\AdminPage\\img\\user.jpg",
+      "PackagePath": "staticwebassets\\AdminPage\\img\\user.jpg"
+    },
+    {
+      "Id": "D:\\Programming\\BaiTap\\DoAn\\GearClub\\GearClub\\wwwroot\\AdminPage\\js\\main.js",
+      "PackagePath": "staticwebassets\\AdminPage\\js\\main.js"
+    },
+    {
+      "Id": "D:\\Programming\\BaiTap\\DoAn\\GearClub\\GearClub\\wwwroot\\AdminPage\\lib\\chart\\chart.min.js",
+      "PackagePath": "staticwebassets\\AdminPage\\lib\\chart\\chart.min.js"
+    },
+    {
+      "Id": "D:\\Programming\\BaiTap\\DoAn\\GearClub\\GearClub\\wwwroot\\AdminPage\\lib\\easing\\easing.js",
+      "PackagePath": "staticwebassets\\AdminPage\\lib\\easing\\easing.js"
+    },
+    {
+      "Id": "D:\\Programming\\BaiTap\\DoAn\\GearClub\\GearClub\\wwwroot\\AdminPage\\lib\\easing\\easing.min.js",
+      "PackagePath": "staticwebassets\\AdminPage\\lib\\easing\\easing.min.js"
+    },
+    {
+      "Id": "D:\\Programming\\BaiTap\\DoAn\\GearClub\\GearClub\\wwwroot\\AdminPage\\lib\\owlcarousel\\LICENSE",
+      "PackagePath": "staticwebassets\\AdminPage\\lib\\owlcarousel"
+    },
+    {
+      "Id": "D:\\Programming\\BaiTap\\DoAn\\GearClub\\GearClub\\wwwroot\\AdminPage\\lib\\owlcarousel\\assets\\ajax-loader.gif",
+      "PackagePath": "staticwebassets\\AdminPage\\lib\\owlcarousel\\assets\\ajax-loader.gif"
+    },
+    {
+      "Id": "D:\\Programming\\BaiTap\\DoAn\\GearClub\\GearClub\\wwwroot\\AdminPage\\lib\\owlcarousel\\assets\\owl.carousel.css",
+      "PackagePath": "staticwebassets\\AdminPage\\lib\\owlcarousel\\assets\\owl.carousel.css"
+    },
+    {
+      "Id": "D:\\Programming\\BaiTap\\DoAn\\GearClub\\GearClub\\wwwroot\\AdminPage\\lib\\owlcarousel\\assets\\owl.carousel.min.css",
+      "PackagePath": "staticwebassets\\AdminPage\\lib\\owlcarousel\\assets\\owl.carousel.min.css"
+    },
+    {
+      "Id": "D:\\Programming\\BaiTap\\DoAn\\GearClub\\GearClub\\wwwroot\\AdminPage\\lib\\owlcarousel\\assets\\owl.theme.default.css",
+      "PackagePath": "staticwebassets\\AdminPage\\lib\\owlcarousel\\assets\\owl.theme.default.css"
+    },
+    {
+      "Id": "D:\\Programming\\BaiTap\\DoAn\\GearClub\\GearClub\\wwwroot\\AdminPage\\lib\\owlcarousel\\assets\\owl.theme.default.min.css",
+      "PackagePath": "staticwebassets\\AdminPage\\lib\\owlcarousel\\assets\\owl.theme.default.min.css"
+    },
+    {
+      "Id": "D:\\Programming\\BaiTap\\DoAn\\GearClub\\GearClub\\wwwroot\\AdminPage\\lib\\owlcarousel\\assets\\owl.theme.green.css",
+      "PackagePath": "staticwebassets\\AdminPage\\lib\\owlcarousel\\assets\\owl.theme.green.css"
+    },
+    {
+      "Id": "D:\\Programming\\BaiTap\\DoAn\\GearClub\\GearClub\\wwwroot\\AdminPage\\lib\\owlcarousel\\assets\\owl.theme.green.min.css",
+      "PackagePath": "staticwebassets\\AdminPage\\lib\\owlcarousel\\assets\\owl.theme.green.min.css"
+    },
+    {
+      "Id": "D:\\Programming\\BaiTap\\DoAn\\GearClub\\GearClub\\wwwroot\\AdminPage\\lib\\owlcarousel\\assets\\owl.video.play.png",
+      "PackagePath": "staticwebassets\\AdminPage\\lib\\owlcarousel\\assets\\owl.video.play.png"
+    },
+    {
+      "Id": "D:\\Programming\\BaiTap\\DoAn\\GearClub\\GearClub\\wwwroot\\AdminPage\\lib\\owlcarousel\\owl.carousel.js",
+      "PackagePath": "staticwebassets\\AdminPage\\lib\\owlcarousel\\owl.carousel.js"
+    },
+    {
+      "Id": "D:\\Programming\\BaiTap\\DoAn\\GearClub\\GearClub\\wwwroot\\AdminPage\\lib\\owlcarousel\\owl.carousel.min.js",
+      "PackagePath": "staticwebassets\\AdminPage\\lib\\owlcarousel\\owl.carousel.min.js"
+    },
+    {
+      "Id": "D:\\Programming\\BaiTap\\DoAn\\GearClub\\GearClub\\wwwroot\\AdminPage\\lib\\tempusdominus\\css\\tempusdominus-bootstrap-4.css",
+      "PackagePath": "staticwebassets\\AdminPage\\lib\\tempusdominus\\css\\tempusdominus-bootstrap-4.css"
+    },
+    {
+      "Id": "D:\\Programming\\BaiTap\\DoAn\\GearClub\\GearClub\\wwwroot\\AdminPage\\lib\\tempusdominus\\css\\tempusdominus-bootstrap-4.min.css",
+      "PackagePath": "staticwebassets\\AdminPage\\lib\\tempusdominus\\css\\tempusdominus-bootstrap-4.min.css"
+    },
+    {
+      "Id": "D:\\Programming\\BaiTap\\DoAn\\GearClub\\GearClub\\wwwroot\\AdminPage\\lib\\tempusdominus\\js\\moment-timezone.min.js",
+      "PackagePath": "staticwebassets\\AdminPage\\lib\\tempusdominus\\js\\moment-timezone.min.js"
+    },
+    {
+      "Id": "D:\\Programming\\BaiTap\\DoAn\\GearClub\\GearClub\\wwwroot\\AdminPage\\lib\\tempusdominus\\js\\moment.min.js",
+      "PackagePath": "staticwebassets\\AdminPage\\lib\\tempusdominus\\js\\moment.min.js"
+    },
+    {
+      "Id": "D:\\Programming\\BaiTap\\DoAn\\GearClub\\GearClub\\wwwroot\\AdminPage\\lib\\tempusdominus\\js\\tempusdominus-bootstrap-4.js",
+      "PackagePath": "staticwebassets\\AdminPage\\lib\\tempusdominus\\js\\tempusdominus-bootstrap-4.js"
+    },
+    {
+      "Id": "D:\\Programming\\BaiTap\\DoAn\\GearClub\\GearClub\\wwwroot\\AdminPage\\lib\\tempusdominus\\js\\tempusdominus-bootstrap-4.min.js",
+      "PackagePath": "staticwebassets\\AdminPage\\lib\\tempusdominus\\js\\tempusdominus-bootstrap-4.min.js"
+    },
+    {
+      "Id": "D:\\Programming\\BaiTap\\DoAn\\GearClub\\GearClub\\wwwroot\\AdminPage\\lib\\waypoints\\links.php",
+      "PackagePath": "staticwebassets\\AdminPage\\lib\\waypoints\\links.php"
+    },
+    {
+      "Id": "D:\\Programming\\BaiTap\\DoAn\\GearClub\\GearClub\\wwwroot\\AdminPage\\lib\\waypoints\\waypoints.min.js",
+      "PackagePath": "staticwebassets\\AdminPage\\lib\\waypoints\\waypoints.min.js"
+    },
+    {
+      "Id": "D:\\Programming\\BaiTap\\DoAn\\GearClub\\GearClub\\wwwroot\\AdminPage\\scss\\bootstrap.scss",
+      "PackagePath": "staticwebassets\\AdminPage\\scss\\bootstrap.scss"
+    },
+    {
+      "Id": "D:\\Programming\\BaiTap\\DoAn\\GearClub\\GearClub\\wwwroot\\AdminPage\\scss\\bootstrap\\scss\\_accordion.scss",
+      "PackagePath": "staticwebassets\\AdminPage\\scss\\bootstrap\\scss\\_accordion.scss"
+    },
+    {
+      "Id": "D:\\Programming\\BaiTap\\DoAn\\GearClub\\GearClub\\wwwroot\\AdminPage\\scss\\bootstrap\\scss\\_alert.scss",
+      "PackagePath": "staticwebassets\\AdminPage\\scss\\bootstrap\\scss\\_alert.scss"
+    },
+    {
+      "Id": "D:\\Programming\\BaiTap\\DoAn\\GearClub\\GearClub\\wwwroot\\AdminPage\\scss\\bootstrap\\scss\\_badge.scss",
+      "PackagePath": "staticwebassets\\AdminPage\\scss\\bootstrap\\scss\\_badge.scss"
+    },
+    {
+      "Id": "D:\\Programming\\BaiTap\\DoAn\\GearClub\\GearClub\\wwwroot\\AdminPage\\scss\\bootstrap\\scss\\_breadcrumb.scss",
+      "PackagePath": "staticwebassets\\AdminPage\\scss\\bootstrap\\scss\\_breadcrumb.scss"
+    },
+    {
+      "Id": "D:\\Programming\\BaiTap\\DoAn\\GearClub\\GearClub\\wwwroot\\AdminPage\\scss\\bootstrap\\scss\\_button-group.scss",
+      "PackagePath": "staticwebassets\\AdminPage\\scss\\bootstrap\\scss\\_button-group.scss"
+    },
+    {
+      "Id": "D:\\Programming\\BaiTap\\DoAn\\GearClub\\GearClub\\wwwroot\\AdminPage\\scss\\bootstrap\\scss\\_buttons.scss",
+      "PackagePath": "staticwebassets\\AdminPage\\scss\\bootstrap\\scss\\_buttons.scss"
+    },
+    {
+      "Id": "D:\\Programming\\BaiTap\\DoAn\\GearClub\\GearClub\\wwwroot\\AdminPage\\scss\\bootstrap\\scss\\_card.scss",
+      "PackagePath": "staticwebassets\\AdminPage\\scss\\bootstrap\\scss\\_card.scss"
+    },
+    {
+      "Id": "D:\\Programming\\BaiTap\\DoAn\\GearClub\\GearClub\\wwwroot\\AdminPage\\scss\\bootstrap\\scss\\_carousel.scss",
+      "PackagePath": "staticwebassets\\AdminPage\\scss\\bootstrap\\scss\\_carousel.scss"
+    },
+    {
+      "Id": "D:\\Programming\\BaiTap\\DoAn\\GearClub\\GearClub\\wwwroot\\AdminPage\\scss\\bootstrap\\scss\\_close.scss",
+      "PackagePath": "staticwebassets\\AdminPage\\scss\\bootstrap\\scss\\_close.scss"
+    },
+    {
+      "Id": "D:\\Programming\\BaiTap\\DoAn\\GearClub\\GearClub\\wwwroot\\AdminPage\\scss\\bootstrap\\scss\\_containers.scss",
+      "PackagePath": "staticwebassets\\AdminPage\\scss\\bootstrap\\scss\\_containers.scss"
+    },
+    {
+      "Id": "D:\\Programming\\BaiTap\\DoAn\\GearClub\\GearClub\\wwwroot\\AdminPage\\scss\\bootstrap\\scss\\_dropdown.scss",
+      "PackagePath": "staticwebassets\\AdminPage\\scss\\bootstrap\\scss\\_dropdown.scss"
+    },
+    {
+      "Id": "D:\\Programming\\BaiTap\\DoAn\\GearClub\\GearClub\\wwwroot\\AdminPage\\scss\\bootstrap\\scss\\_forms.scss",
+      "PackagePath": "staticwebassets\\AdminPage\\scss\\bootstrap\\scss\\_forms.scss"
+    },
+    {
+      "Id": "D:\\Programming\\BaiTap\\DoAn\\GearClub\\GearClub\\wwwroot\\AdminPage\\scss\\bootstrap\\scss\\_functions.scss",
+      "PackagePath": "staticwebassets\\AdminPage\\scss\\bootstrap\\scss\\_functions.scss"
+    },
+    {
+      "Id": "D:\\Programming\\BaiTap\\DoAn\\GearClub\\GearClub\\wwwroot\\AdminPage\\scss\\bootstrap\\scss\\_grid.scss",
+      "PackagePath": "staticwebassets\\AdminPage\\scss\\bootstrap\\scss\\_grid.scss"
+    },
+    {
+      "Id": "D:\\Programming\\BaiTap\\DoAn\\GearClub\\GearClub\\wwwroot\\AdminPage\\scss\\bootstrap\\scss\\_helpers.scss",
+      "PackagePath": "staticwebassets\\AdminPage\\scss\\bootstrap\\scss\\_helpers.scss"
+    },
+    {
+      "Id": "D:\\Programming\\BaiTap\\DoAn\\GearClub\\GearClub\\wwwroot\\AdminPage\\scss\\bootstrap\\scss\\_images.scss",
+      "PackagePath": "staticwebassets\\AdminPage\\scss\\bootstrap\\scss\\_images.scss"
+    },
+    {
+      "Id": "D:\\Programming\\BaiTap\\DoAn\\GearClub\\GearClub\\wwwroot\\AdminPage\\scss\\bootstrap\\scss\\_list-group.scss",
+      "PackagePath": "staticwebassets\\AdminPage\\scss\\bootstrap\\scss\\_list-group.scss"
+    },
+    {
+      "Id": "D:\\Programming\\BaiTap\\DoAn\\GearClub\\GearClub\\wwwroot\\AdminPage\\scss\\bootstrap\\scss\\_mixins.scss",
+      "PackagePath": "staticwebassets\\AdminPage\\scss\\bootstrap\\scss\\_mixins.scss"
+    },
+    {
+      "Id": "D:\\Programming\\BaiTap\\DoAn\\GearClub\\GearClub\\wwwroot\\AdminPage\\scss\\bootstrap\\scss\\_modal.scss",
+      "PackagePath": "staticwebassets\\AdminPage\\scss\\bootstrap\\scss\\_modal.scss"
+    },
+    {
+      "Id": "D:\\Programming\\BaiTap\\DoAn\\GearClub\\GearClub\\wwwroot\\AdminPage\\scss\\bootstrap\\scss\\_nav.scss",
+      "PackagePath": "staticwebassets\\AdminPage\\scss\\bootstrap\\scss\\_nav.scss"
+    },
+    {
+      "Id": "D:\\Programming\\BaiTap\\DoAn\\GearClub\\GearClub\\wwwroot\\AdminPage\\scss\\bootstrap\\scss\\_navbar.scss",
+      "PackagePath": "staticwebassets\\AdminPage\\scss\\bootstrap\\scss\\_navbar.scss"
+    },
+    {
+      "Id": "D:\\Programming\\BaiTap\\DoAn\\GearClub\\GearClub\\wwwroot\\AdminPage\\scss\\bootstrap\\scss\\_offcanvas.scss",
+      "PackagePath": "staticwebassets\\AdminPage\\scss\\bootstrap\\scss\\_offcanvas.scss"
+    },
+    {
+      "Id": "D:\\Programming\\BaiTap\\DoAn\\GearClub\\GearClub\\wwwroot\\AdminPage\\scss\\bootstrap\\scss\\_pagination.scss",
+      "PackagePath": "staticwebassets\\AdminPage\\scss\\bootstrap\\scss\\_pagination.scss"
+    },
+    {
+      "Id": "D:\\Programming\\BaiTap\\DoAn\\GearClub\\GearClub\\wwwroot\\AdminPage\\scss\\bootstrap\\scss\\_popover.scss",
+      "PackagePath": "staticwebassets\\AdminPage\\scss\\bootstrap\\scss\\_popover.scss"
+    },
+    {
+      "Id": "D:\\Programming\\BaiTap\\DoAn\\GearClub\\GearClub\\wwwroot\\AdminPage\\scss\\bootstrap\\scss\\_progress.scss",
+      "PackagePath": "staticwebassets\\AdminPage\\scss\\bootstrap\\scss\\_progress.scss"
+    },
+    {
+      "Id": "D:\\Programming\\BaiTap\\DoAn\\GearClub\\GearClub\\wwwroot\\AdminPage\\scss\\bootstrap\\scss\\_reboot.scss",
+      "PackagePath": "staticwebassets\\AdminPage\\scss\\bootstrap\\scss\\_reboot.scss"
+    },
+    {
+      "Id": "D:\\Programming\\BaiTap\\DoAn\\GearClub\\GearClub\\wwwroot\\AdminPage\\scss\\bootstrap\\scss\\_root.scss",
+      "PackagePath": "staticwebassets\\AdminPage\\scss\\bootstrap\\scss\\_root.scss"
+    },
+    {
+      "Id": "D:\\Programming\\BaiTap\\DoAn\\GearClub\\GearClub\\wwwroot\\AdminPage\\scss\\bootstrap\\scss\\_spinners.scss",
+      "PackagePath": "staticwebassets\\AdminPage\\scss\\bootstrap\\scss\\_spinners.scss"
+    },
+    {
+      "Id": "D:\\Programming\\BaiTap\\DoAn\\GearClub\\GearClub\\wwwroot\\AdminPage\\scss\\bootstrap\\scss\\_tables.scss",
+      "PackagePath": "staticwebassets\\AdminPage\\scss\\bootstrap\\scss\\_tables.scss"
+    },
+    {
+      "Id": "D:\\Programming\\BaiTap\\DoAn\\GearClub\\GearClub\\wwwroot\\AdminPage\\scss\\bootstrap\\scss\\_toasts.scss",
+      "PackagePath": "staticwebassets\\AdminPage\\scss\\bootstrap\\scss\\_toasts.scss"
+    },
+    {
+      "Id": "D:\\Programming\\BaiTap\\DoAn\\GearClub\\GearClub\\wwwroot\\AdminPage\\scss\\bootstrap\\scss\\_tooltip.scss",
+      "PackagePath": "staticwebassets\\AdminPage\\scss\\bootstrap\\scss\\_tooltip.scss"
+    },
+    {
+      "Id": "D:\\Programming\\BaiTap\\DoAn\\GearClub\\GearClub\\wwwroot\\AdminPage\\scss\\bootstrap\\scss\\_transitions.scss",
+      "PackagePath": "staticwebassets\\AdminPage\\scss\\bootstrap\\scss\\_transitions.scss"
+    },
+    {
+      "Id": "D:\\Programming\\BaiTap\\DoAn\\GearClub\\GearClub\\wwwroot\\AdminPage\\scss\\bootstrap\\scss\\_type.scss",
+      "PackagePath": "staticwebassets\\AdminPage\\scss\\bootstrap\\scss\\_type.scss"
+    },
+    {
+      "Id": "D:\\Programming\\BaiTap\\DoAn\\GearClub\\GearClub\\wwwroot\\AdminPage\\scss\\bootstrap\\scss\\_utilities.scss",
+      "PackagePath": "staticwebassets\\AdminPage\\scss\\bootstrap\\scss\\_utilities.scss"
+    },
+    {
+      "Id": "D:\\Programming\\BaiTap\\DoAn\\GearClub\\GearClub\\wwwroot\\AdminPage\\scss\\bootstrap\\scss\\_variables.scss",
+      "PackagePath": "staticwebassets\\AdminPage\\scss\\bootstrap\\scss\\_variables.scss"
+    },
+    {
+      "Id": "D:\\Programming\\BaiTap\\DoAn\\GearClub\\GearClub\\wwwroot\\AdminPage\\scss\\bootstrap\\scss\\bootstrap-grid.scss",
+      "PackagePath": "staticwebassets\\AdminPage\\scss\\bootstrap\\scss\\bootstrap-grid.scss"
+    },
+    {
+      "Id": "D:\\Programming\\BaiTap\\DoAn\\GearClub\\GearClub\\wwwroot\\AdminPage\\scss\\bootstrap\\scss\\bootstrap-reboot.scss",
+      "PackagePath": "staticwebassets\\AdminPage\\scss\\bootstrap\\scss\\bootstrap-reboot.scss"
+    },
+    {
+      "Id": "D:\\Programming\\BaiTap\\DoAn\\GearClub\\GearClub\\wwwroot\\AdminPage\\scss\\bootstrap\\scss\\bootstrap-utilities.scss",
+      "PackagePath": "staticwebassets\\AdminPage\\scss\\bootstrap\\scss\\bootstrap-utilities.scss"
+    },
+    {
+      "Id": "D:\\Programming\\BaiTap\\DoAn\\GearClub\\GearClub\\wwwroot\\AdminPage\\scss\\bootstrap\\scss\\bootstrap.scss",
+      "PackagePath": "staticwebassets\\AdminPage\\scss\\bootstrap\\scss\\bootstrap.scss"
+    },
+    {
+      "Id": "D:\\Programming\\BaiTap\\DoAn\\GearClub\\GearClub\\wwwroot\\AdminPage\\scss\\bootstrap\\scss\\forms\\_floating-labels.scss",
+      "PackagePath": "staticwebassets\\AdminPage\\scss\\bootstrap\\scss\\forms\\_floating-labels.scss"
+    },
+    {
+      "Id": "D:\\Programming\\BaiTap\\DoAn\\GearClub\\GearClub\\wwwroot\\AdminPage\\scss\\bootstrap\\scss\\forms\\_form-check.scss",
+      "PackagePath": "staticwebassets\\AdminPage\\scss\\bootstrap\\scss\\forms\\_form-check.scss"
+    },
+    {
+      "Id": "D:\\Programming\\BaiTap\\DoAn\\GearClub\\GearClub\\wwwroot\\AdminPage\\scss\\bootstrap\\scss\\forms\\_form-control.scss",
+      "PackagePath": "staticwebassets\\AdminPage\\scss\\bootstrap\\scss\\forms\\_form-control.scss"
+    },
+    {
+      "Id": "D:\\Programming\\BaiTap\\DoAn\\GearClub\\GearClub\\wwwroot\\AdminPage\\scss\\bootstrap\\scss\\forms\\_form-range.scss",
+      "PackagePath": "staticwebassets\\AdminPage\\scss\\bootstrap\\scss\\forms\\_form-range.scss"
+    },
+    {
+      "Id": "D:\\Programming\\BaiTap\\DoAn\\GearClub\\GearClub\\wwwroot\\AdminPage\\scss\\bootstrap\\scss\\forms\\_form-select.scss",
+      "PackagePath": "staticwebassets\\AdminPage\\scss\\bootstrap\\scss\\forms\\_form-select.scss"
+    },
+    {
+      "Id": "D:\\Programming\\BaiTap\\DoAn\\GearClub\\GearClub\\wwwroot\\AdminPage\\scss\\bootstrap\\scss\\forms\\_form-text.scss",
+      "PackagePath": "staticwebassets\\AdminPage\\scss\\bootstrap\\scss\\forms\\_form-text.scss"
+    },
+    {
+      "Id": "D:\\Programming\\BaiTap\\DoAn\\GearClub\\GearClub\\wwwroot\\AdminPage\\scss\\bootstrap\\scss\\forms\\_input-group.scss",
+      "PackagePath": "staticwebassets\\AdminPage\\scss\\bootstrap\\scss\\forms\\_input-group.scss"
+    },
+    {
+      "Id": "D:\\Programming\\BaiTap\\DoAn\\GearClub\\GearClub\\wwwroot\\AdminPage\\scss\\bootstrap\\scss\\forms\\_labels.scss",
+      "PackagePath": "staticwebassets\\AdminPage\\scss\\bootstrap\\scss\\forms\\_labels.scss"
+    },
+    {
+      "Id": "D:\\Programming\\BaiTap\\DoAn\\GearClub\\GearClub\\wwwroot\\AdminPage\\scss\\bootstrap\\scss\\forms\\_validation.scss",
+      "PackagePath": "staticwebassets\\AdminPage\\scss\\bootstrap\\scss\\forms\\_validation.scss"
+    },
+    {
+      "Id": "D:\\Programming\\BaiTap\\DoAn\\GearClub\\GearClub\\wwwroot\\AdminPage\\scss\\bootstrap\\scss\\helpers\\_clearfix.scss",
+      "PackagePath": "staticwebassets\\AdminPage\\scss\\bootstrap\\scss\\helpers\\_clearfix.scss"
+    },
+    {
+      "Id": "D:\\Programming\\BaiTap\\DoAn\\GearClub\\GearClub\\wwwroot\\AdminPage\\scss\\bootstrap\\scss\\helpers\\_colored-links.scss",
+      "PackagePath": "staticwebassets\\AdminPage\\scss\\bootstrap\\scss\\helpers\\_colored-links.scss"
+    },
+    {
+      "Id": "D:\\Programming\\BaiTap\\DoAn\\GearClub\\GearClub\\wwwroot\\AdminPage\\scss\\bootstrap\\scss\\helpers\\_position.scss",
+      "PackagePath": "staticwebassets\\AdminPage\\scss\\bootstrap\\scss\\helpers\\_position.scss"
+    },
+    {
+      "Id": "D:\\Programming\\BaiTap\\DoAn\\GearClub\\GearClub\\wwwroot\\AdminPage\\scss\\bootstrap\\scss\\helpers\\_ratio.scss",
+      "PackagePath": "staticwebassets\\AdminPage\\scss\\bootstrap\\scss\\helpers\\_ratio.scss"
+    },
+    {
+      "Id": "D:\\Programming\\BaiTap\\DoAn\\GearClub\\GearClub\\wwwroot\\AdminPage\\scss\\bootstrap\\scss\\helpers\\_stretched-link.scss",
+      "PackagePath": "staticwebassets\\AdminPage\\scss\\bootstrap\\scss\\helpers\\_stretched-link.scss"
+    },
+    {
+      "Id": "D:\\Programming\\BaiTap\\DoAn\\GearClub\\GearClub\\wwwroot\\AdminPage\\scss\\bootstrap\\scss\\helpers\\_text-truncation.scss",
+      "PackagePath": "staticwebassets\\AdminPage\\scss\\bootstrap\\scss\\helpers\\_text-truncation.scss"
+    },
+    {
+      "Id": "D:\\Programming\\BaiTap\\DoAn\\GearClub\\GearClub\\wwwroot\\AdminPage\\scss\\bootstrap\\scss\\helpers\\_visually-hidden.scss",
+      "PackagePath": "staticwebassets\\AdminPage\\scss\\bootstrap\\scss\\helpers\\_visually-hidden.scss"
+    },
+    {
+      "Id": "D:\\Programming\\BaiTap\\DoAn\\GearClub\\GearClub\\wwwroot\\AdminPage\\scss\\bootstrap\\scss\\mixins\\_alert.scss",
+      "PackagePath": "staticwebassets\\AdminPage\\scss\\bootstrap\\scss\\mixins\\_alert.scss"
+    },
+    {
+      "Id": "D:\\Programming\\BaiTap\\DoAn\\GearClub\\GearClub\\wwwroot\\AdminPage\\scss\\bootstrap\\scss\\mixins\\_border-radius.scss",
+      "PackagePath": "staticwebassets\\AdminPage\\scss\\bootstrap\\scss\\mixins\\_border-radius.scss"
+    },
+    {
+      "Id": "D:\\Programming\\BaiTap\\DoAn\\GearClub\\GearClub\\wwwroot\\AdminPage\\scss\\bootstrap\\scss\\mixins\\_box-shadow.scss",
+      "PackagePath": "staticwebassets\\AdminPage\\scss\\bootstrap\\scss\\mixins\\_box-shadow.scss"
+    },
+    {
+      "Id": "D:\\Programming\\BaiTap\\DoAn\\GearClub\\GearClub\\wwwroot\\AdminPage\\scss\\bootstrap\\scss\\mixins\\_breakpoints.scss",
+      "PackagePath": "staticwebassets\\AdminPage\\scss\\bootstrap\\scss\\mixins\\_breakpoints.scss"
+    },
+    {
+      "Id": "D:\\Programming\\BaiTap\\DoAn\\GearClub\\GearClub\\wwwroot\\AdminPage\\scss\\bootstrap\\scss\\mixins\\_buttons.scss",
+      "PackagePath": "staticwebassets\\AdminPage\\scss\\bootstrap\\scss\\mixins\\_buttons.scss"
+    },
+    {
+      "Id": "D:\\Programming\\BaiTap\\DoAn\\GearClub\\GearClub\\wwwroot\\AdminPage\\scss\\bootstrap\\scss\\mixins\\_caret.scss",
+      "PackagePath": "staticwebassets\\AdminPage\\scss\\bootstrap\\scss\\mixins\\_caret.scss"
+    },
+    {
+      "Id": "D:\\Programming\\BaiTap\\DoAn\\GearClub\\GearClub\\wwwroot\\AdminPage\\scss\\bootstrap\\scss\\mixins\\_clearfix.scss",
+      "PackagePath": "staticwebassets\\AdminPage\\scss\\bootstrap\\scss\\mixins\\_clearfix.scss"
+    },
+    {
+      "Id": "D:\\Programming\\BaiTap\\DoAn\\GearClub\\GearClub\\wwwroot\\AdminPage\\scss\\bootstrap\\scss\\mixins\\_color-scheme.scss",
+      "PackagePath": "staticwebassets\\AdminPage\\scss\\bootstrap\\scss\\mixins\\_color-scheme.scss"
+    },
+    {
+      "Id": "D:\\Programming\\BaiTap\\DoAn\\GearClub\\GearClub\\wwwroot\\AdminPage\\scss\\bootstrap\\scss\\mixins\\_container.scss",
+      "PackagePath": "staticwebassets\\AdminPage\\scss\\bootstrap\\scss\\mixins\\_container.scss"
+    },
+    {
+      "Id": "D:\\Programming\\BaiTap\\DoAn\\GearClub\\GearClub\\wwwroot\\AdminPage\\scss\\bootstrap\\scss\\mixins\\_deprecate.scss",
+      "PackagePath": "staticwebassets\\AdminPage\\scss\\bootstrap\\scss\\mixins\\_deprecate.scss"
+    },
+    {
+      "Id": "D:\\Programming\\BaiTap\\DoAn\\GearClub\\GearClub\\wwwroot\\AdminPage\\scss\\bootstrap\\scss\\mixins\\_forms.scss",
+      "PackagePath": "staticwebassets\\AdminPage\\scss\\bootstrap\\scss\\mixins\\_forms.scss"
+    },
+    {
+      "Id": "D:\\Programming\\BaiTap\\DoAn\\GearClub\\GearClub\\wwwroot\\AdminPage\\scss\\bootstrap\\scss\\mixins\\_gradients.scss",
+      "PackagePath": "staticwebassets\\AdminPage\\scss\\bootstrap\\scss\\mixins\\_gradients.scss"
+    },
+    {
+      "Id": "D:\\Programming\\BaiTap\\DoAn\\GearClub\\GearClub\\wwwroot\\AdminPage\\scss\\bootstrap\\scss\\mixins\\_grid.scss",
+      "PackagePath": "staticwebassets\\AdminPage\\scss\\bootstrap\\scss\\mixins\\_grid.scss"
+    },
+    {
+      "Id": "D:\\Programming\\BaiTap\\DoAn\\GearClub\\GearClub\\wwwroot\\AdminPage\\scss\\bootstrap\\scss\\mixins\\_image.scss",
+      "PackagePath": "staticwebassets\\AdminPage\\scss\\bootstrap\\scss\\mixins\\_image.scss"
+    },
+    {
+      "Id": "D:\\Programming\\BaiTap\\DoAn\\GearClub\\GearClub\\wwwroot\\AdminPage\\scss\\bootstrap\\scss\\mixins\\_list-group.scss",
+      "PackagePath": "staticwebassets\\AdminPage\\scss\\bootstrap\\scss\\mixins\\_list-group.scss"
+    },
+    {
+      "Id": "D:\\Programming\\BaiTap\\DoAn\\GearClub\\GearClub\\wwwroot\\AdminPage\\scss\\bootstrap\\scss\\mixins\\_lists.scss",
+      "PackagePath": "staticwebassets\\AdminPage\\scss\\bootstrap\\scss\\mixins\\_lists.scss"
+    },
+    {
+      "Id": "D:\\Programming\\BaiTap\\DoAn\\GearClub\\GearClub\\wwwroot\\AdminPage\\scss\\bootstrap\\scss\\mixins\\_pagination.scss",
+      "PackagePath": "staticwebassets\\AdminPage\\scss\\bootstrap\\scss\\mixins\\_pagination.scss"
+    },
+    {
+      "Id": "D:\\Programming\\BaiTap\\DoAn\\GearClub\\GearClub\\wwwroot\\AdminPage\\scss\\bootstrap\\scss\\mixins\\_reset-text.scss",
+      "PackagePath": "staticwebassets\\AdminPage\\scss\\bootstrap\\scss\\mixins\\_reset-text.scss"
+    },
+    {
+      "Id": "D:\\Programming\\BaiTap\\DoAn\\GearClub\\GearClub\\wwwroot\\AdminPage\\scss\\bootstrap\\scss\\mixins\\_resize.scss",
+      "PackagePath": "staticwebassets\\AdminPage\\scss\\bootstrap\\scss\\mixins\\_resize.scss"
+    },
+    {
+      "Id": "D:\\Programming\\BaiTap\\DoAn\\GearClub\\GearClub\\wwwroot\\AdminPage\\scss\\bootstrap\\scss\\mixins\\_table-variants.scss",
+      "PackagePath": "staticwebassets\\AdminPage\\scss\\bootstrap\\scss\\mixins\\_table-variants.scss"
+    },
+    {
+      "Id": "D:\\Programming\\BaiTap\\DoAn\\GearClub\\GearClub\\wwwroot\\AdminPage\\scss\\bootstrap\\scss\\mixins\\_text-truncate.scss",
+      "PackagePath": "staticwebassets\\AdminPage\\scss\\bootstrap\\scss\\mixins\\_text-truncate.scss"
+    },
+    {
+      "Id": "D:\\Programming\\BaiTap\\DoAn\\GearClub\\GearClub\\wwwroot\\AdminPage\\scss\\bootstrap\\scss\\mixins\\_transition.scss",
+      "PackagePath": "staticwebassets\\AdminPage\\scss\\bootstrap\\scss\\mixins\\_transition.scss"
+    },
+    {
+      "Id": "D:\\Programming\\BaiTap\\DoAn\\GearClub\\GearClub\\wwwroot\\AdminPage\\scss\\bootstrap\\scss\\mixins\\_utilities.scss",
+      "PackagePath": "staticwebassets\\AdminPage\\scss\\bootstrap\\scss\\mixins\\_utilities.scss"
+    },
+    {
+      "Id": "D:\\Programming\\BaiTap\\DoAn\\GearClub\\GearClub\\wwwroot\\AdminPage\\scss\\bootstrap\\scss\\mixins\\_visually-hidden.scss",
+      "PackagePath": "staticwebassets\\AdminPage\\scss\\bootstrap\\scss\\mixins\\_visually-hidden.scss"
+    },
+    {
+      "Id": "D:\\Programming\\BaiTap\\DoAn\\GearClub\\GearClub\\wwwroot\\AdminPage\\scss\\bootstrap\\scss\\utilities\\_api.scss",
+      "PackagePath": "staticwebassets\\AdminPage\\scss\\bootstrap\\scss\\utilities\\_api.scss"
+    },
+    {
+      "Id": "D:\\Programming\\BaiTap\\DoAn\\GearClub\\GearClub\\wwwroot\\AdminPage\\scss\\bootstrap\\scss\\vendor\\_rfs.scss",
+      "PackagePath": "staticwebassets\\AdminPage\\scss\\bootstrap\\scss\\vendor\\_rfs.scss"
+    },
+    {
       "Id": "D:\\Programming\\BaiTap\\DoAn\\GearClub\\GearClub\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },

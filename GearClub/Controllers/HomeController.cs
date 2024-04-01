@@ -19,8 +19,13 @@ namespace GearClub.Controllers
         }
 
         public IActionResult Index()
-        {
-            ViewData["user"] = _userManager.GetUserName(User);            
+        {                       
+            return View();
+        }
+
+        [Authorize(Roles = "Admin")]
+        public IActionResult AdminDashboard()
+        {            
             return View();
         }
 
