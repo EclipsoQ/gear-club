@@ -32,6 +32,14 @@ builder.Services.ConfigureApplicationCookie(options =>
 
 // Add Repositories 
 builder.Services.AddScoped<IRepository<Product>, ProductRepository>();
+builder.Services.AddScoped<IRepository<Category>, CategoryRepository>();
+builder.Services.AddScoped<IRepository<Image>, ImageRepository>();
+builder.Services.AddScoped<IRepository<Category_Product>, CategoryProductRepository>();
+builder.Services.AddScoped<IRepository<Cart>, CartRepository>();
+builder.Services.AddScoped<IRepository<CartDetail>, CartDetailRepository>();
+builder.Services.AddScoped<IRepository<Order>, OrderRepository>();
+builder.Services.AddScoped<IRepository<Specification>, SpecificationRepo>();
+//builder.Services.AddScoped<IRepository<OrderDetail>, OrderDetailRepo>();
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();

@@ -969,32 +969,28 @@
       "PackagePath": "staticwebassets\\img\\ProductImages\\9\\inh-viewsonic-va2215-h-22-75hz-fhd-18_80f945f6003e4df387a147b0ec597acf_a444bf0abe6641518c6490c0dcde2d4d_grande.webp"
     },
     {
-      "Id": "D:\\Programming\\BaiTap\\DoAn\\GearClub\\GearClub\\wwwroot\\img\\ProductImages\\CategoryImages\\14\\ram.webp",
-      "PackagePath": "staticwebassets\\img\\ProductImages\\CategoryImages\\14\\ram.webp"
+      "Id": "D:\\Programming\\BaiTap\\DoAn\\GearClub\\GearClub\\wwwroot\\img\\ProductImages\\CategoryImages\\1.jpg",
+      "PackagePath": "staticwebassets\\img\\ProductImages\\CategoryImages\\1.jpg"
     },
     {
-      "Id": "D:\\Programming\\BaiTap\\DoAn\\GearClub\\GearClub\\wwwroot\\img\\ProductImages\\CategoryImages\\18\\ssd.webp",
-      "PackagePath": "staticwebassets\\img\\ProductImages\\CategoryImages\\18\\ssd.webp"
+      "Id": "D:\\Programming\\BaiTap\\DoAn\\GearClub\\GearClub\\wwwroot\\img\\ProductImages\\CategoryImages\\2.jpg",
+      "PackagePath": "staticwebassets\\img\\ProductImages\\CategoryImages\\2.jpg"
     },
     {
-      "Id": "D:\\Programming\\BaiTap\\DoAn\\GearClub\\GearClub\\wwwroot\\img\\ProductImages\\CategoryImages\\19\\ssd.webp",
-      "PackagePath": "staticwebassets\\img\\ProductImages\\CategoryImages\\19\\ssd.webp"
+      "Id": "D:\\Programming\\BaiTap\\DoAn\\GearClub\\GearClub\\wwwroot\\img\\ProductImages\\CategoryImages\\3.jpg",
+      "PackagePath": "staticwebassets\\img\\ProductImages\\CategoryImages\\3.jpg"
     },
     {
-      "Id": "D:\\Programming\\BaiTap\\DoAn\\GearClub\\GearClub\\wwwroot\\img\\ProductImages\\CategoryImages\\1\\monitor.jpg",
-      "PackagePath": "staticwebassets\\img\\ProductImages\\CategoryImages\\1\\monitor.jpg"
+      "Id": "D:\\Programming\\BaiTap\\DoAn\\GearClub\\GearClub\\wwwroot\\img\\ProductImages\\CategoryImages\\4.jpg",
+      "PackagePath": "staticwebassets\\img\\ProductImages\\CategoryImages\\4.jpg"
     },
     {
-      "Id": "D:\\Programming\\BaiTap\\DoAn\\GearClub\\GearClub\\wwwroot\\img\\ProductImages\\CategoryImages\\2\\headphones.jpg",
-      "PackagePath": "staticwebassets\\img\\ProductImages\\CategoryImages\\2\\headphones.jpg"
+      "Id": "D:\\Programming\\BaiTap\\DoAn\\GearClub\\GearClub\\wwwroot\\img\\ProductImages\\CategoryImages\\5.jpg",
+      "PackagePath": "staticwebassets\\img\\ProductImages\\CategoryImages\\5.jpg"
     },
     {
-      "Id": "D:\\Programming\\BaiTap\\DoAn\\GearClub\\GearClub\\wwwroot\\img\\ProductImages\\CategoryImages\\3\\mouse.jpg",
-      "PackagePath": "staticwebassets\\img\\ProductImages\\CategoryImages\\3\\mouse.jpg"
-    },
-    {
-      "Id": "D:\\Programming\\BaiTap\\DoAn\\GearClub\\GearClub\\wwwroot\\img\\ProductImages\\CategoryImages\\4\\keyboard.jpg",
-      "PackagePath": "staticwebassets\\img\\ProductImages\\CategoryImages\\4\\keyboard.jpg"
+      "Id": "D:\\Programming\\BaiTap\\DoAn\\GearClub\\GearClub\\wwwroot\\img\\ProductImages\\CategoryImages\\6.jpg",
+      "PackagePath": "staticwebassets\\img\\ProductImages\\CategoryImages\\6.jpg"
     },
     {
       "Id": "D:\\Programming\\BaiTap\\DoAn\\GearClub\\GearClub\\wwwroot\\img\\ProductImages\\PreviewImages\\10\\Preview.webp",
@@ -1189,36 +1185,40 @@
       "PackagePath": "staticwebassets\\img\\user.jpg"
     },
     {
-      "Id": "D:\\Programming\\BaiTap\\DoAn\\GearClub\\GearClub\\wwwroot\\img\\vendor-1.jpg",
-      "PackagePath": "staticwebassets\\img\\vendor-1.jpg"
+      "Id": "D:\\Programming\\BaiTap\\DoAn\\GearClub\\GearClub\\wwwroot\\img\\vendors\\alienware.png",
+      "PackagePath": "staticwebassets\\img\\vendors\\alienware.png"
     },
     {
-      "Id": "D:\\Programming\\BaiTap\\DoAn\\GearClub\\GearClub\\wwwroot\\img\\vendor-2.jpg",
-      "PackagePath": "staticwebassets\\img\\vendor-2.jpg"
+      "Id": "D:\\Programming\\BaiTap\\DoAn\\GearClub\\GearClub\\wwwroot\\img\\vendors\\aorus.png",
+      "PackagePath": "staticwebassets\\img\\vendors\\aorus.png"
     },
     {
-      "Id": "D:\\Programming\\BaiTap\\DoAn\\GearClub\\GearClub\\wwwroot\\img\\vendor-3.jpg",
-      "PackagePath": "staticwebassets\\img\\vendor-3.jpg"
+      "Id": "D:\\Programming\\BaiTap\\DoAn\\GearClub\\GearClub\\wwwroot\\img\\vendors\\asus.png",
+      "PackagePath": "staticwebassets\\img\\vendors\\asus.png"
     },
     {
-      "Id": "D:\\Programming\\BaiTap\\DoAn\\GearClub\\GearClub\\wwwroot\\img\\vendor-4.jpg",
-      "PackagePath": "staticwebassets\\img\\vendor-4.jpg"
+      "Id": "D:\\Programming\\BaiTap\\DoAn\\GearClub\\GearClub\\wwwroot\\img\\vendors\\corsair.png",
+      "PackagePath": "staticwebassets\\img\\vendors\\corsair.png"
     },
     {
-      "Id": "D:\\Programming\\BaiTap\\DoAn\\GearClub\\GearClub\\wwwroot\\img\\vendor-5.jpg",
-      "PackagePath": "staticwebassets\\img\\vendor-5.jpg"
+      "Id": "D:\\Programming\\BaiTap\\DoAn\\GearClub\\GearClub\\wwwroot\\img\\vendors\\intel.png",
+      "PackagePath": "staticwebassets\\img\\vendors\\intel.png"
     },
     {
-      "Id": "D:\\Programming\\BaiTap\\DoAn\\GearClub\\GearClub\\wwwroot\\img\\vendor-6.jpg",
-      "PackagePath": "staticwebassets\\img\\vendor-6.jpg"
+      "Id": "D:\\Programming\\BaiTap\\DoAn\\GearClub\\GearClub\\wwwroot\\img\\vendors\\logitech.png",
+      "PackagePath": "staticwebassets\\img\\vendors\\logitech.png"
     },
     {
-      "Id": "D:\\Programming\\BaiTap\\DoAn\\GearClub\\GearClub\\wwwroot\\img\\vendor-7.jpg",
-      "PackagePath": "staticwebassets\\img\\vendor-7.jpg"
+      "Id": "D:\\Programming\\BaiTap\\DoAn\\GearClub\\GearClub\\wwwroot\\img\\vendors\\msi.png",
+      "PackagePath": "staticwebassets\\img\\vendors\\msi.png"
     },
     {
-      "Id": "D:\\Programming\\BaiTap\\DoAn\\GearClub\\GearClub\\wwwroot\\img\\vendor-8.jpg",
-      "PackagePath": "staticwebassets\\img\\vendor-8.jpg"
+      "Id": "D:\\Programming\\BaiTap\\DoAn\\GearClub\\GearClub\\wwwroot\\img\\vendors\\rog.png",
+      "PackagePath": "staticwebassets\\img\\vendors\\rog.png"
+    },
+    {
+      "Id": "D:\\Programming\\BaiTap\\DoAn\\GearClub\\GearClub\\wwwroot\\img\\vendors\\viewsonic.png",
+      "PackagePath": "staticwebassets\\img\\vendors\\viewsonic.png"
     },
     {
       "Id": "D:\\Programming\\BaiTap\\DoAn\\GearClub\\GearClub\\wwwroot\\js\\main.js",

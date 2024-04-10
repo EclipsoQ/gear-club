@@ -17,6 +17,11 @@ namespace GearClub.Repositories
             _context.SaveChanges();            
         }
 
+        public int CountById(int id)
+        {
+            throw new NotImplementedException();
+        }
+
         public void Delete(Product entity)
         {
             _context.Products.Remove(entity);
@@ -38,5 +43,6 @@ namespace GearClub.Repositories
             _context.Products.Update(entity);
             _context.SaveChanges();
         }
+                
     }
 }

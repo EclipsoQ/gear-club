@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "JqyKHX0MoxsWLhi1uFEGQ18DtJjieFXf6/VcYvAjBe4=",
+  "Hash": "SfkWwoSBLFkxI5i8MVN05DisCBNqWC5kSwOaPDUbt7Y=",
   "Source": "GearClub",
   "BasePath": "_content/GearClub",
   "Mode": "Default",
@@ -6135,12 +6135,12 @@
       "OriginalItemSpec": "wwwroot\\img\\ProductImages\\9\\inh-viewsonic-va2215-h-22-75hz-fhd-18_80f945f6003e4df387a147b0ec597acf_a444bf0abe6641518c6490c0dcde2d4d_grande.webp"
     },
     {
-      "Identity": "D:\\Programming\\BaiTap\\DoAn\\GearClub\\GearClub\\wwwroot\\img\\ProductImages\\CategoryImages\\1\\monitor.jpg",
+      "Identity": "D:\\Programming\\BaiTap\\DoAn\\GearClub\\GearClub\\wwwroot\\img\\ProductImages\\CategoryImages\\1.jpg",
       "SourceId": "GearClub",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\Programming\\BaiTap\\DoAn\\GearClub\\GearClub\\wwwroot\\",
       "BasePath": "_content/GearClub",
-      "RelativePath": "img/ProductImages/CategoryImages/1/monitor.jpg",
+      "RelativePath": "img/ProductImages/CategoryImages/1.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -6151,15 +6151,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\img\\ProductImages\\CategoryImages\\1\\monitor.jpg"
+      "OriginalItemSpec": "wwwroot\\img\\ProductImages\\CategoryImages\\1.jpg"
     },
     {
-      "Identity": "D:\\Programming\\BaiTap\\DoAn\\GearClub\\GearClub\\wwwroot\\img\\ProductImages\\CategoryImages\\14\\ram.webp",
+      "Identity": "D:\\Programming\\BaiTap\\DoAn\\GearClub\\GearClub\\wwwroot\\img\\ProductImages\\CategoryImages\\2.jpg",
       "SourceId": "GearClub",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\Programming\\BaiTap\\DoAn\\GearClub\\GearClub\\wwwroot\\",
       "BasePath": "_content/GearClub",
-      "RelativePath": "img/ProductImages/CategoryImages/14/ram.webp",
+      "RelativePath": "img/ProductImages/CategoryImages/2.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -6170,15 +6170,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\img\\ProductImages\\CategoryImages\\14\\ram.webp"
+      "OriginalItemSpec": "wwwroot\\img\\ProductImages\\CategoryImages\\2.jpg"
     },
     {
-      "Identity": "D:\\Programming\\BaiTap\\DoAn\\GearClub\\GearClub\\wwwroot\\img\\ProductImages\\CategoryImages\\18\\ssd.webp",
+      "Identity": "D:\\Programming\\BaiTap\\DoAn\\GearClub\\GearClub\\wwwroot\\img\\ProductImages\\CategoryImages\\3.jpg",
       "SourceId": "GearClub",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\Programming\\BaiTap\\DoAn\\GearClub\\GearClub\\wwwroot\\",
       "BasePath": "_content/GearClub",
-      "RelativePath": "img/ProductImages/CategoryImages/18/ssd.webp",
+      "RelativePath": "img/ProductImages/CategoryImages/3.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -6189,15 +6189,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\img\\ProductImages\\CategoryImages\\18\\ssd.webp"
+      "OriginalItemSpec": "wwwroot\\img\\ProductImages\\CategoryImages\\3.jpg"
     },
     {
-      "Identity": "D:\\Programming\\BaiTap\\DoAn\\GearClub\\GearClub\\wwwroot\\img\\ProductImages\\CategoryImages\\19\\ssd.webp",
+      "Identity": "D:\\Programming\\BaiTap\\DoAn\\GearClub\\GearClub\\wwwroot\\img\\ProductImages\\CategoryImages\\4.jpg",
       "SourceId": "GearClub",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\Programming\\BaiTap\\DoAn\\GearClub\\GearClub\\wwwroot\\",
       "BasePath": "_content/GearClub",
-      "RelativePath": "img/ProductImages/CategoryImages/19/ssd.webp",
+      "RelativePath": "img/ProductImages/CategoryImages/4.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -6208,15 +6208,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\img\\ProductImages\\CategoryImages\\19\\ssd.webp"
+      "OriginalItemSpec": "wwwroot\\img\\ProductImages\\CategoryImages\\4.jpg"
     },
     {
-      "Identity": "D:\\Programming\\BaiTap\\DoAn\\GearClub\\GearClub\\wwwroot\\img\\ProductImages\\CategoryImages\\2\\headphones.jpg",
+      "Identity": "D:\\Programming\\BaiTap\\DoAn\\GearClub\\GearClub\\wwwroot\\img\\ProductImages\\CategoryImages\\5.jpg",
       "SourceId": "GearClub",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\Programming\\BaiTap\\DoAn\\GearClub\\GearClub\\wwwroot\\",
       "BasePath": "_content/GearClub",
-      "RelativePath": "img/ProductImages/CategoryImages/2/headphones.jpg",
+      "RelativePath": "img/ProductImages/CategoryImages/5.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -6227,15 +6227,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\img\\ProductImages\\CategoryImages\\2\\headphones.jpg"
+      "OriginalItemSpec": "wwwroot\\img\\ProductImages\\CategoryImages\\5.jpg"
     },
     {
-      "Identity": "D:\\Programming\\BaiTap\\DoAn\\GearClub\\GearClub\\wwwroot\\img\\ProductImages\\CategoryImages\\3\\mouse.jpg",
+      "Identity": "D:\\Programming\\BaiTap\\DoAn\\GearClub\\GearClub\\wwwroot\\img\\ProductImages\\CategoryImages\\6.jpg",
       "SourceId": "GearClub",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\Programming\\BaiTap\\DoAn\\GearClub\\GearClub\\wwwroot\\",
       "BasePath": "_content/GearClub",
-      "RelativePath": "img/ProductImages/CategoryImages/3/mouse.jpg",
+      "RelativePath": "img/ProductImages/CategoryImages/6.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -6246,26 +6246,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\img\\ProductImages\\CategoryImages\\3\\mouse.jpg"
-    },
-    {
-      "Identity": "D:\\Programming\\BaiTap\\DoAn\\GearClub\\GearClub\\wwwroot\\img\\ProductImages\\CategoryImages\\4\\keyboard.jpg",
-      "SourceId": "GearClub",
-      "SourceType": "Discovered",
-      "ContentRoot": "D:\\Programming\\BaiTap\\DoAn\\GearClub\\GearClub\\wwwroot\\",
-      "BasePath": "_content/GearClub",
-      "RelativePath": "img/ProductImages/CategoryImages/4/keyboard.jpg",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\img\\ProductImages\\CategoryImages\\4\\keyboard.jpg"
+      "OriginalItemSpec": "wwwroot\\img\\ProductImages\\CategoryImages\\6.jpg"
     },
     {
       "Identity": "D:\\Programming\\BaiTap\\DoAn\\GearClub\\GearClub\\wwwroot\\img\\ProductImages\\PreviewImages\\1\\Preview.webp",
@@ -6819,12 +6800,12 @@
       "OriginalItemSpec": "wwwroot\\img\\user.jpg"
     },
     {
-      "Identity": "D:\\Programming\\BaiTap\\DoAn\\GearClub\\GearClub\\wwwroot\\img\\vendor-1.jpg",
+      "Identity": "D:\\Programming\\BaiTap\\DoAn\\GearClub\\GearClub\\wwwroot\\img\\vendors\\alienware.png",
       "SourceId": "GearClub",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\Programming\\BaiTap\\DoAn\\GearClub\\GearClub\\wwwroot\\",
       "BasePath": "_content/GearClub",
-      "RelativePath": "img/vendor-1.jpg",
+      "RelativePath": "img/vendors/alienware.png",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -6835,15 +6816,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\img\\vendor-1.jpg"
+      "OriginalItemSpec": "wwwroot\\img\\vendors\\alienware.png"
     },
     {
-      "Identity": "D:\\Programming\\BaiTap\\DoAn\\GearClub\\GearClub\\wwwroot\\img\\vendor-2.jpg",
+      "Identity": "D:\\Programming\\BaiTap\\DoAn\\GearClub\\GearClub\\wwwroot\\img\\vendors\\aorus.png",
       "SourceId": "GearClub",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\Programming\\BaiTap\\DoAn\\GearClub\\GearClub\\wwwroot\\",
       "BasePath": "_content/GearClub",
-      "RelativePath": "img/vendor-2.jpg",
+      "RelativePath": "img/vendors/aorus.png",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -6854,15 +6835,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\img\\vendor-2.jpg"
+      "OriginalItemSpec": "wwwroot\\img\\vendors\\aorus.png"
     },
     {
-      "Identity": "D:\\Programming\\BaiTap\\DoAn\\GearClub\\GearClub\\wwwroot\\img\\vendor-3.jpg",
+      "Identity": "D:\\Programming\\BaiTap\\DoAn\\GearClub\\GearClub\\wwwroot\\img\\vendors\\asus.png",
       "SourceId": "GearClub",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\Programming\\BaiTap\\DoAn\\GearClub\\GearClub\\wwwroot\\",
       "BasePath": "_content/GearClub",
-      "RelativePath": "img/vendor-3.jpg",
+      "RelativePath": "img/vendors/asus.png",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -6873,15 +6854,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\img\\vendor-3.jpg"
+      "OriginalItemSpec": "wwwroot\\img\\vendors\\asus.png"
     },
     {
-      "Identity": "D:\\Programming\\BaiTap\\DoAn\\GearClub\\GearClub\\wwwroot\\img\\vendor-4.jpg",
+      "Identity": "D:\\Programming\\BaiTap\\DoAn\\GearClub\\GearClub\\wwwroot\\img\\vendors\\corsair.png",
       "SourceId": "GearClub",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\Programming\\BaiTap\\DoAn\\GearClub\\GearClub\\wwwroot\\",
       "BasePath": "_content/GearClub",
-      "RelativePath": "img/vendor-4.jpg",
+      "RelativePath": "img/vendors/corsair.png",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -6892,15 +6873,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\img\\vendor-4.jpg"
+      "OriginalItemSpec": "wwwroot\\img\\vendors\\corsair.png"
     },
     {
-      "Identity": "D:\\Programming\\BaiTap\\DoAn\\GearClub\\GearClub\\wwwroot\\img\\vendor-5.jpg",
+      "Identity": "D:\\Programming\\BaiTap\\DoAn\\GearClub\\GearClub\\wwwroot\\img\\vendors\\intel.png",
       "SourceId": "GearClub",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\Programming\\BaiTap\\DoAn\\GearClub\\GearClub\\wwwroot\\",
       "BasePath": "_content/GearClub",
-      "RelativePath": "img/vendor-5.jpg",
+      "RelativePath": "img/vendors/intel.png",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -6911,15 +6892,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\img\\vendor-5.jpg"
+      "OriginalItemSpec": "wwwroot\\img\\vendors\\intel.png"
     },
     {
-      "Identity": "D:\\Programming\\BaiTap\\DoAn\\GearClub\\GearClub\\wwwroot\\img\\vendor-6.jpg",
+      "Identity": "D:\\Programming\\BaiTap\\DoAn\\GearClub\\GearClub\\wwwroot\\img\\vendors\\logitech.png",
       "SourceId": "GearClub",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\Programming\\BaiTap\\DoAn\\GearClub\\GearClub\\wwwroot\\",
       "BasePath": "_content/GearClub",
-      "RelativePath": "img/vendor-6.jpg",
+      "RelativePath": "img/vendors/logitech.png",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -6930,15 +6911,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\img\\vendor-6.jpg"
+      "OriginalItemSpec": "wwwroot\\img\\vendors\\logitech.png"
     },
     {
-      "Identity": "D:\\Programming\\BaiTap\\DoAn\\GearClub\\GearClub\\wwwroot\\img\\vendor-7.jpg",
+      "Identity": "D:\\Programming\\BaiTap\\DoAn\\GearClub\\GearClub\\wwwroot\\img\\vendors\\msi.png",
       "SourceId": "GearClub",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\Programming\\BaiTap\\DoAn\\GearClub\\GearClub\\wwwroot\\",
       "BasePath": "_content/GearClub",
-      "RelativePath": "img/vendor-7.jpg",
+      "RelativePath": "img/vendors/msi.png",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -6949,15 +6930,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\img\\vendor-7.jpg"
+      "OriginalItemSpec": "wwwroot\\img\\vendors\\msi.png"
     },
     {
-      "Identity": "D:\\Programming\\BaiTap\\DoAn\\GearClub\\GearClub\\wwwroot\\img\\vendor-8.jpg",
+      "Identity": "D:\\Programming\\BaiTap\\DoAn\\GearClub\\GearClub\\wwwroot\\img\\vendors\\rog.png",
       "SourceId": "GearClub",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\Programming\\BaiTap\\DoAn\\GearClub\\GearClub\\wwwroot\\",
       "BasePath": "_content/GearClub",
-      "RelativePath": "img/vendor-8.jpg",
+      "RelativePath": "img/vendors/rog.png",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -6968,7 +6949,26 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\img\\vendor-8.jpg"
+      "OriginalItemSpec": "wwwroot\\img\\vendors\\rog.png"
+    },
+    {
+      "Identity": "D:\\Programming\\BaiTap\\DoAn\\GearClub\\GearClub\\wwwroot\\img\\vendors\\viewsonic.png",
+      "SourceId": "GearClub",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Programming\\BaiTap\\DoAn\\GearClub\\GearClub\\wwwroot\\",
+      "BasePath": "_content/GearClub",
+      "RelativePath": "img/vendors/viewsonic.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\vendors\\viewsonic.png"
     },
     {
       "Identity": "D:\\Programming\\BaiTap\\DoAn\\GearClub\\GearClub\\wwwroot\\js\\main.js",

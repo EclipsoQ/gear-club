@@ -14,7 +14,7 @@ namespace GearClub.Components
 
         public IViewComponentResult Invoke()
         {
-            var products = _productRepository.GetAll().Take(8);
+            var products = _productRepository.GetAll().Take(8);            
             return View(products);
         }
     }

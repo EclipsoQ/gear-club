@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Threading.Tasks;
+using GearClub.Models;
 using Microsoft.AspNetCore.Identity;
 
 namespace GearClub.Areas.Identity.Data;
@@ -17,5 +18,9 @@ public class ApplicationUser : IdentityUser
     [PersonalData]
     [Column(TypeName = "nvarchar(100)")]
     public string LastName { get; set; } = null!;
+
+    public virtual ICollection<Address>? Addresses { get; set; }
+
+    public virtual ICollection<Cart>? Carts { get; set; }
 }
 

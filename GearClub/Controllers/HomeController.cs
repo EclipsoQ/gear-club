@@ -10,12 +10,13 @@ namespace GearClub.Controllers
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;
-        private readonly UserManager<ApplicationUser> _userManager;
+        private readonly UserManager<ApplicationUser> _userManager;       
 
         public HomeController(ILogger<HomeController> logger, UserManager<ApplicationUser> userManager)
         {
             _logger = logger;
             _userManager = userManager;
+            
         }
 
         public IActionResult Index()
@@ -28,8 +29,7 @@ namespace GearClub.Controllers
         {            
             return View();
         }
-
-        [Authorize]
+       
         public IActionResult Privacy()
         {
             return View();
