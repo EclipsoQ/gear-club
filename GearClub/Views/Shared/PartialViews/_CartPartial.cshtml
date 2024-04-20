@@ -1,0 +1,30 @@
+﻿@model GearClub.Domain.Models.CartDetail
+
+@{
+    var value = Model.Product.Price * Model.Quantity;
+}
+<tr class="item-row" data-cart-detail-id="@Model.CartDetailId">
+    <td class="align-middle">
+        <img src="/img/ProductImages/PreviewImages/@Model.Product.ProductId/Preview.webp"
+             alt="" style="width: 50px;"> @Model.Product.Name
+    </td>
+    <td class="align-middle item-price">@Model.Product.Price.ToString("##,###,000")₫</td>
+    <td class="align-middle">
+        <div class="input-group quantity mx-auto" style="width: 100px;">
+            <div class="input-group-btn">
+                <button class="btn btn-sm btn-primary btn-minus">
+                    <i class="fa fa-minus"></i>
+                </button>
+            </div>
+
+            <input type="text" class="form-control form-control-sm bg-secondary border-0 text-center" value="@Model.Quantity" readonly>
+            <div class="input-group-btn">
+                <button class="btn btn-sm btn-primary btn-plus">
+                    <i class="fa fa-plus"></i>
+                </button>
+            </div>
+        </div>
+    </td>
+    <td class="align-middle item-subtotal">@value.ToString("###,###,##0")₫</td>
+    <td class="align-middle"><button class="btn btn-sm btn-danger btn-remove"><i class="fa fa-times"></i></button></td>
+</tr>

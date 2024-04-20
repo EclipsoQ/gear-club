@@ -90,15 +90,24 @@
         var oldValue = button.parent().parent().find('input').val();
         if (button.hasClass('btn-plus')) {
             var newVal = parseFloat(oldValue) + 1;
+            button.parent().prev().prev().children().prop("disabled", false);
+            
         } else {
-            if (oldValue > 0) {
+            
+            if (oldValue > 1) {
                 var newVal = parseFloat(oldValue) - 1;
-            } else {
-                newVal = 0;
-            }
+                if (newVal == 1) {
+                    button.prop("disabled", true);
+                }
+            } 
+            else {
+                newVal = 1;  
+                button.prop("disabled", true);
+            }           
         }
         button.parent().parent().find('input').val(newVal);
     });
+ 
     
 })(jQuery);
 

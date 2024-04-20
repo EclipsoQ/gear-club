@@ -1,4 +1,4 @@
-﻿@model IEnumerable<GearClub.CompositeModels.CategoryListModel>
+﻿@model IEnumerable<GearClub.Presentation.CompositeModels.CategoryListModel>
 @{
     Layout = null;
 }
@@ -6,13 +6,13 @@
 @foreach(var item in Model)
 {
     <div class="col-lg-3 col-md-4 col-sm-6 pb-1">
-        <a class="text-decoration-none" href="">
+        <a class="text-decoration-none" href="/Product/ProductsByCategory/@item.Category.CategoryId">
             @{
                 string imagePath = item.Category.CategoryId.ToString() + ".jpg";
             }
             <div class="cat-item d-flex align-items-center mb-4">
                 <div class="overflow-hidden" style="width: 100px; height: 100px;">
-                    <img class="img-fluid" src="img/ProductImages/CategoryImages/@imagePath" 
+                    <img class="img-fluid" src="/img/ProductImages/CategoryImages/@imagePath" 
                         alt="">
                 </div>
                 <div class="flex-fill pl-3">

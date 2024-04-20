@@ -445,6 +445,10 @@
       "PackagePath": "staticwebassets\\AdminPage\\scss\\bootstrap\\scss\\vendor\\_rfs.scss"
     },
     {
+      "Id": "D:\\Programming\\BaiTap\\DoAn\\GearClub\\GearClub\\wwwroot\\css\\errorstyle.css",
+      "PackagePath": "staticwebassets\\css\\errorstyle.css"
+    },
+    {
       "Id": "D:\\Programming\\BaiTap\\DoAn\\GearClub\\GearClub\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },
@@ -1219,6 +1223,18 @@
     {
       "Id": "D:\\Programming\\BaiTap\\DoAn\\GearClub\\GearClub\\wwwroot\\img\\vendors\\viewsonic.png",
       "PackagePath": "staticwebassets\\img\\vendors\\viewsonic.png"
+    },
+    {
+      "Id": "D:\\Programming\\BaiTap\\DoAn\\GearClub\\GearClub\\wwwroot\\js\\cart\\addToCart.js",
+      "PackagePath": "staticwebassets\\js\\cart\\addToCart.js"
+    },
+    {
+      "Id": "D:\\Programming\\BaiTap\\DoAn\\GearClub\\GearClub\\wwwroot\\js\\cart\\cart.js",
+      "PackagePath": "staticwebassets\\js\\cart\\cart.js"
+    },
+    {
+      "Id": "D:\\Programming\\BaiTap\\DoAn\\GearClub\\GearClub\\wwwroot\\js\\filterProducts.js",
+      "PackagePath": "staticwebassets\\js\\filterProducts.js"
     },
     {
       "Id": "D:\\Programming\\BaiTap\\DoAn\\GearClub\\GearClub\\wwwroot\\js\\main.js",

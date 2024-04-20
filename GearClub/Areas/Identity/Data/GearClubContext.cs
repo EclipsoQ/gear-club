@@ -1,5 +1,5 @@
 ﻿using GearClub.Areas.Identity.Data;
-using GearClub.Models;
+using GearClub.Domain.Models;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;

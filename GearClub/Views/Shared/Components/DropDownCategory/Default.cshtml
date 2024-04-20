@@ -1,4 +1,4 @@
-﻿@model IEnumerable<GearClub.Models.Category>
+﻿@model IEnumerable<Category>
 @{
     Layout = null;
 }
@@ -20,7 +20,7 @@
             </div> *@
             @foreach (var item in Model)
             {
-                <a href="" class="nav-item nav-link">@item.Name</a>
+                <a href="/Product/ProductsByCategory/@item.CategoryId" class="nav-item nav-link">@item.Name</a>
             }                        
         </div>
     </nav>

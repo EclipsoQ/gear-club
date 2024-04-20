@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Threading.Tasks;
-using GearClub.Models;
+using GearClub.Domain.Models;
 using Microsoft.AspNetCore.Identity;
 
 namespace GearClub.Areas.Identity.Data;
