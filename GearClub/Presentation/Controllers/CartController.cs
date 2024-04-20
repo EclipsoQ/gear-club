@@ -57,16 +57,8 @@ namespace GearClub.Presentation.Controllers
             var id = data.Id;
             var quantity = data.Quantity;
             if (cartService.UpdateLine(id, quantity))
-            {
-                var lineSubtotal = cartService.ComputeLineSubtotal(id);
-                var cart = cartService.GetCartByLine(id);
-                var values = cartService.ComputeCartValues(cart.CartId);                
-                return Json(new { 
-                    lineSubtotal = lineSubtotal, 
-                    subtotals = values.Subtotals , 
-                    shipping = values.ShippingFee, 
-                    total = values.Total()
-                });  
+            {                                                
+                return Ok();
             }
             else return StatusCode(500, "Error processing data");            
         }

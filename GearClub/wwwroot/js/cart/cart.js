@@ -23,10 +23,7 @@ buttonPlus.forEach(function (button) {
                 } else {
                     throw new Error("Error sending data to controller")
                 }
-            })
-            .then(function (data) {                
-                lineToUpdate.querySelector(".item-subtotal").innerText = data.subtotal.toLocaleString("en-US") + "₫";
-            })
+            })            
             .catch(function (error) {
                 console.log("An error occurs: ", error)
             })
@@ -35,14 +32,16 @@ buttonPlus.forEach(function (button) {
 
 
 var buttonMinus = Array.from(document.querySelectorAll(".btn-minus"));
-buttonMinus.forEach(function (button) {
-    window.onload = function () {
-        var value = button.parentElement.nextElementSibling.value;       
+window.onload = (event) => {
+    buttonMinus.forEach(function (button) {
+        var value = button.parentElement.nextElementSibling.value;
         if (value == 1) {
             button.disabled = true;
         }
-    }
-    button.addEventListener('click', function () {       
+    });
+};
+buttonMinus.forEach(function (button) {
+   button.addEventListener('click', function () {       
         var index = buttonMinus.indexOf(button);         
         var lineToUpdate = document.querySelectorAll("[data-cart-detail-id]")[index];
         var id = lineToUpdate.getAttribute("data-cart-detail-id");
@@ -65,13 +64,7 @@ buttonMinus.forEach(function (button) {
                 } else {
                     throw new Error("Error sending data to controller")
                 }
-            })
-            /*.then(function (data) {
-                lineToUpdate.querySelector(".item-subtotal").innerText = data.lineSubtotal.toLocaleString("en-US") + "₫";
-                document.getElementById("subtotal-all").innerText = data.subtotals.toLocaleString("en-US") + "₫";
-                document.getElementById("shipping-fee").innerText = data.shipping.toLocaleString("en-US") + "₫";
-                document.getElementById("total").innerText = data.total.toLocaleString("en-US") + "₫";
-            })*/
+            })            
             .catch(function (error) {
                 console.log("An error occurs: ", error)
             })
@@ -102,6 +95,7 @@ removeBtns.forEach(function (btn) {
             })
                 .then(function (response) {
                     if (response.ok) {
+                        location.reload();
                         return response.text();
                     } else {
                         throw new Error("Error sending data to controller")
