@@ -15,6 +15,8 @@ var connectionString = builder.Configuration.GetConnectionString("GearClubContex
 
 builder.Services.AddDbContext<GearClubContext>(options => options.UseSqlServer(connectionString));
 
+//builder.Services.AddDefaultIdentity<ApplicationUser>(options => options.SignIn.RequireConfirmedAccount = true).AddEntityFrameworkStores<GearClubContext>();
+
 // Add Identity services and configurations
 builder.Services.AddIdentity<ApplicationUser, IdentityRole>(options => options.SignIn.RequireConfirmedAccount = false)
         .AddEntityFrameworkStores<GearClubContext>()
@@ -42,10 +44,13 @@ builder.Services.AddScoped<IRepository<CartDetail>, CartDetailRepository>();
 builder.Services.AddScoped<IRepository<Order>, OrderRepository>();
 builder.Services.AddScoped<IRepository<Specification>, SpecificationRepo>();
 builder.Services.AddScoped<IRepository<OrderDetail>, OrderDetailRepo>();
+builder.Services.AddScoped<IRepository<Address>, AddressRepo>();
 
 // Add service objects
 builder.Services.AddTransient<IProductService, ProductServices>();
 builder.Services.AddTransient<ICartService, CartService>();
+builder.Services.AddTransient<IOrderService, OrderService>();
+builder.Services.AddTransient<IAddressService, AddressService>();
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
@@ -65,7 +70,7 @@ app.UseHttpsRedirection();
 app.UseStaticFiles();
 
 app.UseRouting();
-
+app.UseAuthentication();
 app.UseAuthorization();
 
 app.MapControllerRoute(

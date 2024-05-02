@@ -1,4 +1,5 @@
-﻿@model IEnumerable<GearClub.Domain.Models.Specification>
+﻿@model GearClub.Presentation.CompositeModels.ProductDetailModel
+
 @{
     Layout = null;
 }
@@ -7,7 +8,7 @@
 <head>
 	<meta charset="utf-8" />
 	<title>Table Style</title>
-	<meta name="viewport" content="initial-scale=1.0; maximum-scale=1.0; width=device-width;">
+	<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, width=device-width">
 	<link href="/css/DetailPartial.css" rel="stylesheet" />
 	<style>
 
@@ -132,8 +133,15 @@
 
 	<table class="table-fill">
 		<tbody class="table-hover">
-			
-            @foreach(var item in Model)
+            <tr>
+                <td class="text-left">Hãng sản xuất</td>
+                <td class="text-left">@Model.Product.Brand</td>
+            </tr>
+            <tr>
+                <td class="text-left">Mẫu sản phẩm</td>
+                <td class="text-left">@Model.Product.Model</td>
+            </tr>
+            @foreach(var item in Model.Specifications)
             {
                 <tr>
                     <td class="text-left">@item.Name</td>

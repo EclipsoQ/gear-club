@@ -16,8 +16,15 @@ namespace GearClub.Domain.Models
         [MinLength(10)]
         public string Details { get; set; } = null!;
         public string Recipient { get; set; } = null!;
+        [StringLength(20)]
+        public string PhoneNumber { get; set; } = null!;
+        public bool IsDefault { get; set; } = false;
         public string UserId { get; set; } = null!;
         public virtual ApplicationUser User { get; set; } = null!;
         public virtual ICollection<Order>? Orders { get; set; }
+        public override string ToString()
+        {
+            return $"{Ward}, {Province}, {City}";
+        }
     }
 }

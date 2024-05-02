@@ -4,8 +4,8 @@ namespace GearClub.Presentation.CompositeModels
 {
     public class FilterData
     {
-        public int CategoryId { get; set; }
-        public string? PriceRange { get; set; }
-        public string? Brand { get; set; }
+       // public int CategoryId { get; set; }
+        public List<string>? PriceRange { get; set; }
+        public List<string>? Brand { get; set; }
     }
 }

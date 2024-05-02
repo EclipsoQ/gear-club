@@ -1,0 +1,72 @@
+﻿@model GearClub.Domain.Models.Address
+
+@{
+    ViewData["Title"] = "ClientCreate";
+    Layout = "~/Views/Shared/_LayoutClient.cshtml";
+}
+
+<!-- Breadcrumb Start -->
+<div class="container-fluid">
+    <div class="row px-xl-5">
+        <div class="col-12">
+            <nav class="breadcrumb bg-light mb-30">
+                <a class="breadcrumb-item text-dark" href="/Home/Index">Trang chủ</a>
+                <a class="breadcrumb-item text-dark" asp-area="Identity" asp-page="/Account/Manage/Index">Tài khoản</a>
+                <span class="breadcrumb-item active">Sổ địa chỉ</span>
+            </nav>
+        </div>
+    </div>
+</div>
+<!-- Breadcrumb End -->
+
+<!-- Content Start -->
+<div class="container-fluid">
+    <div class="row px-xl-5">
+        <div class="col-6">
+            <form asp-action="Create">
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                <div class="form-floating mb-3">
+                    <input asp-for="City" class="form-control" placeholder="Tỉnh/Thành"/>
+                    <label asp-for="City" class="control-label">Tỉnh/Thành</label>                    
+                    <span asp-validation-for="City" class="text-danger"></span>
+                </div>
+                <div class="form-floating mb-3">
+                    <input asp-for="Province" class="form-control" placeholder="Quận/Huyện"/>
+                    <label asp-for="Province" class="control-label">Quận/Huyện</label>
+                    <span asp-validation-for="Province" class="text-danger"></span>
+                </div>
+                <div class="form-floating mb-3">
+                    <input asp-for="Ward" class="form-control" placeholder="Phường/Xã"/>
+                    <label asp-for="Ward" class="control-label">Phường/Xã</label>
+                    <span asp-validation-for="Ward" class="text-danger"></span>
+                </div>
+                <div class="form-floating mb-3">
+                    <input asp-for="Details" class="form-control" placeholder="Chi tiết"/>
+                    <label asp-for="Details" class="control-label">Chi tiết</label>
+                    <span asp-validation-for="Details" class="text-danger"></span>
+                </div>
+                <div class="form-floating mb-3">
+                    <input asp-for="Recipient" class="form-control" placeholder="Người nhận"/>
+                    <label asp-for="Recipient" class="control-label">Người nhận</label>
+                    <span asp-validation-for="Recipient" class="text-danger"></span>
+                </div>
+                <div class="form-floating mb-3">                    
+                    <input asp-for="PhoneNumber" class="form-control" placeholder="012-34567"/>
+                    <label asp-for="PhoneNumber" class="control-label">Số điện thoại</label>
+                    <span asp-validation-for="PhoneNumber" class="text-danger"></span>
+                </div>
+                <div class="form-group" hidden>
+                    <label asp-for="UserId" class="control-label"></label>
+                    <input asp-for="UserId" class="form-control" value="@ViewBag.UserId" />
+                </div>
+                <div class="form-group">
+                    <input type="submit" value="Create" class="btn btn-primary" />
+                </div>
+            </form>
+            <a asp-action="Index">Back to List</a>
+        </div>
+    </div>
+</div>
+<!-- Content End -->
+
+

@@ -1,6 +1,7 @@
 ﻿using GearClub.Data;
 using GearClub.Domain.Models;
 using GearClub.Domain.RepoInterfaces;
+using Microsoft.EntityFrameworkCore;
 
 namespace GearClub.Infrastructures.Repositories
 {
@@ -31,7 +32,7 @@ namespace GearClub.Infrastructures.Repositories
 
         public IEnumerable<Order> GetAll()
         {
-            return _context.Orders.ToList();
+            return _context.Orders.Include(o => o.Address).ThenInclude(a => a.User).ToList();
         }
 
         public Order GetById(int id)

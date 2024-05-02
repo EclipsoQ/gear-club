@@ -17,7 +17,7 @@ namespace GearClub.Migrations
         {
 #pragma warning disable 612, 618
             modelBuilder
-                .HasAnnotation("ProductVersion", "8.0.3")
+                .HasAnnotation("ProductVersion", "8.0.4")
                 .HasAnnotation("Relational:MaxIdentifierLength", 128);
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
@@ -95,7 +95,7 @@ namespace GearClub.Migrations
                     b.ToTable("AspNetUsers", (string)null);
                 });
 
-            modelBuilder.Entity("GearClub.Models.Address", b =>
+            modelBuilder.Entity("GearClub.Domain.Models.Address", b =>
                 {
                     b.Property<int>("AddressId")
                         .ValueGeneratedOnAdd()
@@ -110,6 +110,14 @@ namespace GearClub.Migrations
                     b.Property<string>("Details")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
+
+                    b.Property<bool>("IsDefault")
+                        .HasColumnType("bit");
+
+                    b.Property<string>("PhoneNumber")
+                        .IsRequired()
+                        .HasMaxLength(20)
+                        .HasColumnType("nvarchar(20)");
 
                     b.Property<string>("Province")
                         .IsRequired()
@@ -134,7 +142,7 @@ namespace GearClub.Migrations
                     b.ToTable("Addresses");
                 });
 
-            modelBuilder.Entity("GearClub.Models.Cart", b =>
+            modelBuilder.Entity("GearClub.Domain.Models.Cart", b =>
                 {
                     b.Property<int>("CartId")
                         .ValueGeneratedOnAdd()
@@ -142,7 +150,7 @@ namespace GearClub.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("CartId"));
 
-                    b.Property<bool>("IsCheckedOut")
+                    b.Property<bool?>("IsCheckedOut")
                         .HasColumnType("bit");
 
                     b.Property<string>("UserId")
@@ -156,7 +164,7 @@ namespace GearClub.Migrations
                     b.ToTable("Carts");
                 });
 
-            modelBuilder.Entity("GearClub.Models.CartDetail", b =>
+            modelBuilder.Entity("GearClub.Domain.Models.CartDetail", b =>
                 {
                     b.Property<int>("CartDetailId")
                         .ValueGeneratedOnAdd()
@@ -182,7 +190,7 @@ namespace GearClub.Migrations
                     b.ToTable("CartDetails");
                 });
 
-            modelBuilder.Entity("GearClub.Models.Category", b =>
+            modelBuilder.Entity("GearClub.Domain.Models.Category", b =>
                 {
                     b.Property<int>("CategoryId")
                         .ValueGeneratedOnAdd()
@@ -200,7 +208,7 @@ namespace GearClub.Migrations
                     b.ToTable("Categories");
                 });
 
-            modelBuilder.Entity("GearClub.Models.Category_Product", b =>
+            modelBuilder.Entity("GearClub.Domain.Models.Category_Product", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -223,7 +231,7 @@ namespace GearClub.Migrations
                     b.ToTable("Category_Products");
                 });
 
-            modelBuilder.Entity("GearClub.Models.Image", b =>
+            modelBuilder.Entity("GearClub.Domain.Models.Image", b =>
                 {
                     b.Property<int>("ImageId")
                         .ValueGeneratedOnAdd()
@@ -251,7 +259,7 @@ namespace GearClub.Migrations
                     b.ToTable("Images");
                 });
 
-            modelBuilder.Entity("GearClub.Models.Order", b =>
+            modelBuilder.Entity("GearClub.Domain.Models.Order", b =>
                 {
                     b.Property<int>("OrderId")
                         .ValueGeneratedOnAdd()
@@ -260,9 +268,6 @@ namespace GearClub.Migrations
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("OrderId"));
 
                     b.Property<int>("AddressId")
-                        .HasColumnType("int");
-
-                    b.Property<int>("CartId")
                         .HasColumnType("int");
 
                     b.Property<DateTime>("OrderDate")
@@ -281,7 +286,7 @@ namespace GearClub.Migrations
                     b.ToTable("Orders");
                 });
 
-            modelBuilder.Entity("GearClub.Models.OrderDetail", b =>
+            modelBuilder.Entity("GearClub.Domain.Models.OrderDetail", b =>
                 {
                     b.Property<int>("OrderDetailId")
                         .ValueGeneratedOnAdd()
@@ -307,7 +312,7 @@ namespace GearClub.Migrations
                     b.ToTable("OrderDetails");
                 });
 
-            modelBuilder.Entity("GearClub.Models.Product", b =>
+            modelBuilder.Entity("GearClub.Domain.Models.Product", b =>
                 {
                     b.Property<int>("ProductId")
                         .ValueGeneratedOnAdd()
@@ -321,7 +326,7 @@ namespace GearClub.Migrations
                         .HasColumnType("nvarchar(50)");
 
                     b.Property<string>("Description")
-                        .HasColumnType("nvarchar(max)");
+                        .HasColumnType("ntext");
 
                     b.Property<string>("Model")
                         .IsRequired()
@@ -347,7 +352,7 @@ namespace GearClub.Migrations
                     b.ToTable("Products");
                 });
 
-            modelBuilder.Entity("GearClub.Models.Specification", b =>
+            modelBuilder.Entity("GearClub.Domain.Models.Specification", b =>
                 {
                     b.Property<int>("SpecId")
                         .ValueGeneratedOnAdd()
@@ -506,7 +511,7 @@ namespace GearClub.Migrations
                     b.ToTable("AspNetUserTokens", (string)null);
                 });
 
-            modelBuilder.Entity("GearClub.Models.Address", b =>
+            modelBuilder.Entity("GearClub.Domain.Models.Address", b =>
                 {
                     b.HasOne("GearClub.Areas.Identity.Data.ApplicationUser", "User")
                         .WithMany("Addresses")
@@ -517,7 +522,7 @@ namespace GearClub.Migrations
                     b.Navigation("User");
                 });
 
-            modelBuilder.Entity("GearClub.Models.Cart", b =>
+            modelBuilder.Entity("GearClub.Domain.Models.Cart", b =>
                 {
                     b.HasOne("GearClub.Areas.Identity.Data.ApplicationUser", "User")
                         .WithMany("Carts")
@@ -528,15 +533,15 @@ namespace GearClub.Migrations
                     b.Navigation("User");
                 });
 
-            modelBuilder.Entity("GearClub.Models.CartDetail", b =>
+            modelBuilder.Entity("GearClub.Domain.Models.CartDetail", b =>
                 {
-                    b.HasOne("GearClub.Models.Cart", "Cart")
+                    b.HasOne("GearClub.Domain.Models.Cart", "Cart")
                         .WithMany("CartDetails")
                         .HasForeignKey("CartId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("GearClub.Models.Product", "Product")
+                    b.HasOne("GearClub.Domain.Models.Product", "Product")
                         .WithMany("CartDetails")
                         .HasForeignKey("ProductId")
                         .OnDelete(DeleteBehavior.Cascade)
@@ -547,15 +552,15 @@ namespace GearClub.Migrations
                     b.Navigation("Product");
                 });
 
-            modelBuilder.Entity("GearClub.Models.Category_Product", b =>
+            modelBuilder.Entity("GearClub.Domain.Models.Category_Product", b =>
                 {
-                    b.HasOne("GearClub.Models.Category", "Category")
+                    b.HasOne("GearClub.Domain.Models.Category", "Category")
                         .WithMany("Category_Products")
                         .HasForeignKey("CategoryId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("GearClub.Models.Product", "Product")
+                    b.HasOne("GearClub.Domain.Models.Product", "Product")
                         .WithMany("Category_Products")
                         .HasForeignKey("ProductId")
                         .OnDelete(DeleteBehavior.Cascade)
@@ -566,13 +571,13 @@ namespace GearClub.Migrations
                     b.Navigation("Product");
                 });
 
-            modelBuilder.Entity("GearClub.Models.Image", b =>
+            modelBuilder.Entity("GearClub.Domain.Models.Image", b =>
                 {
-                    b.HasOne("GearClub.Models.Category", "Category")
+                    b.HasOne("GearClub.Domain.Models.Category", "Category")
                         .WithOne("Image")
-                        .HasForeignKey("GearClub.Models.Image", "CategoryId");
+                        .HasForeignKey("GearClub.Domain.Models.Image", "CategoryId");
 
-                    b.HasOne("GearClub.Models.Product", "Product")
+                    b.HasOne("GearClub.Domain.Models.Product", "Product")
                         .WithMany("Images")
                         .HasForeignKey("ProductId");
 
@@ -581,9 +586,9 @@ namespace GearClub.Migrations
                     b.Navigation("Product");
                 });
 
-            modelBuilder.Entity("GearClub.Models.Order", b =>
+            modelBuilder.Entity("GearClub.Domain.Models.Order", b =>
                 {
-                    b.HasOne("GearClub.Models.Address", "Address")
+                    b.HasOne("GearClub.Domain.Models.Address", "Address")
                         .WithMany("Orders")
                         .HasForeignKey("AddressId")
                         .OnDelete(DeleteBehavior.Cascade)
@@ -592,15 +597,15 @@ namespace GearClub.Migrations
                     b.Navigation("Address");
                 });
 
-            modelBuilder.Entity("GearClub.Models.OrderDetail", b =>
+            modelBuilder.Entity("GearClub.Domain.Models.OrderDetail", b =>
                 {
-                    b.HasOne("GearClub.Models.Order", "Order")
+                    b.HasOne("GearClub.Domain.Models.Order", "Order")
                         .WithMany("OrderDetails")
                         .HasForeignKey("OrderId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("GearClub.Models.Product", "Product")
+                    b.HasOne("GearClub.Domain.Models.Product", "Product")
                         .WithMany("OrderDetails")
                         .HasForeignKey("ProductId")
                         .OnDelete(DeleteBehavior.Cascade)
@@ -611,9 +616,9 @@ namespace GearClub.Migrations
                     b.Navigation("Product");
                 });
 
-            modelBuilder.Entity("GearClub.Models.Specification", b =>
+            modelBuilder.Entity("GearClub.Domain.Models.Specification", b =>
                 {
-                    b.HasOne("GearClub.Models.Product", "Product")
+                    b.HasOne("GearClub.Domain.Models.Product", "Product")
                         .WithMany("Specifications")
                         .HasForeignKey("ProductId")
                         .OnDelete(DeleteBehavior.Cascade)
@@ -680,29 +685,29 @@ namespace GearClub.Migrations
                     b.Navigation("Carts");
                 });
 
-            modelBuilder.Entity("GearClub.Models.Address", b =>
+            modelBuilder.Entity("GearClub.Domain.Models.Address", b =>
                 {
                     b.Navigation("Orders");
                 });
 
-            modelBuilder.Entity("GearClub.Models.Cart", b =>
+            modelBuilder.Entity("GearClub.Domain.Models.Cart", b =>
                 {
                     b.Navigation("CartDetails");
                 });
 
-            modelBuilder.Entity("GearClub.Models.Category", b =>
+            modelBuilder.Entity("GearClub.Domain.Models.Category", b =>
                 {
                     b.Navigation("Category_Products");
 
                     b.Navigation("Image");
                 });
 
-            modelBuilder.Entity("GearClub.Models.Order", b =>
+            modelBuilder.Entity("GearClub.Domain.Models.Order", b =>
                 {
                     b.Navigation("OrderDetails");
                 });
 
-            modelBuilder.Entity("GearClub.Models.Product", b =>
+            modelBuilder.Entity("GearClub.Domain.Models.Product", b =>
                 {
                     b.Navigation("CartDetails");
 

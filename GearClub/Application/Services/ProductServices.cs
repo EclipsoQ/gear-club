@@ -38,6 +38,34 @@ namespace GearClub.Application.Services
             throw new NotImplementedException();
         }
 
+        public IEnumerable<Product> FilterProduct(FilterData filter)
+        {
+            var filteredProducts = _productRepo.GetAll();           
+            //filter by price
+            if (filter.PriceRange != null && filter.PriceRange.Count > 0
+                && !filter.PriceRange.Contains("all"))
+            {
+                List<PriceRange> priceRanges = new List<PriceRange>();
+                foreach (var priceRange in filter.PriceRange)
+                {
+                    var value = priceRange.Split('-').ToArray();
+                    PriceRange range = new PriceRange();
+                    range.Min = Convert.ToInt16(value[0]);
+                    range.Max = Convert.ToInt16(value[1]);
+                    priceRanges.Add(range);
+
+                }
+                filteredProducts = filteredProducts.Where(n => priceRanges
+                    .Any(r => n.Price >= r.Min * 1000000 && n.Price <= r.Max * 1000000)).ToList();
+            }
+
+            //filter by brand
+            var brands = filter.Brand;
+            filteredProducts = filteredProducts.Where(p => brands.Any(b => p.Brand.ToLower() == b)).ToList();
+
+            return filteredProducts;
+        }
+
         public IEnumerable<Product> GetAllProducts()
         {
             return _productRepo.GetAll().ToList(); 
@@ -72,6 +100,11 @@ namespace GearClub.Application.Services
                        select product;
 
             return products;
+        }
+
+        public IEnumerable<Product> SearchProduct(string searchString)
+        {
+            return _productRepo.GetAll().Where(p => p.Name.Contains(searchString, StringComparison.OrdinalIgnoreCase));
         }
 
         public bool UpdateProduct(Product product)

@@ -4,17 +4,23 @@
 @inject SignInManager<ApplicationUser> SignInManager
 @inject UserManager<ApplicationUser> UserManager
 
+@{
+    
+}
+
 <div class="btn-group">
     @if (SignInManager.IsSignedIn(User))
     {
+        var user = @UserManager.GetUserAsync(User).Result;
         <button type="button" class="btn btn-sm btn-light dropdown-toggle" data-toggle="dropdown">
             Tài khoản
         </button>
         <div class="dropdown-menu dropdown-menu-right">
-            <a id="manage" class="dropdown-item" asp-area="Identity" asp-page="/Account/Manage/Index" title="Manage">Hello @UserManager.GetUserAsync(User).Result.LastName!</a>
+            <a id="manage" class="dropdown-item" asp-area="Identity" asp-page="/Account/Manage/Index" title="Manage">Hello @user.FirstName!</a>
             <form id="logoutForm" class="dropdown-item" asp-area="Identity" asp-page="/Account/Logout" asp-route-returnUrl="@Url.Action("Index", "Home", new { area = "" })">
                 <button id="logout" type="submit" class="nav-link btn btn-link text-dark border-0" style="padding: 0 0 0 0">Đăng xuất</button>
             </form>
+            <a class="dropdown-item" href="/Address/Index/@user.Id">Sổ địa chỉ</a>
         </div>
     }
     else

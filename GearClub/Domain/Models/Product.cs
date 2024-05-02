@@ -3,7 +3,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace GearClub.Domain.Models
 {
-    public class Product
+    public class Product 
     {
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
@@ -15,6 +15,7 @@ namespace GearClub.Domain.Models
         public int StockQuantity { get; set; }
         public int Warranty { get; set; }
         [MinLength(20)]
+        [Column(TypeName = "ntext")]
         public string? Description { get; set; }
         [StringLength(50)]
         public string Brand { get; set; } = null!;
@@ -24,6 +25,6 @@ namespace GearClub.Domain.Models
         public virtual ICollection<Image> Images { get; set; } = new List<Image>();
         public virtual ICollection<CartDetail>? CartDetails { get; set; }
         public virtual ICollection<OrderDetail> OrderDetails { get; set; } = new List<OrderDetail>();
-        public virtual ICollection<Specification>? Specifications { get; set; }
+        public virtual ICollection<Specification>? Specifications { get; set; }        
     }
 }

@@ -11,7 +11,7 @@ namespace GearClub.Domain.Models
         public DateTime OrderDate { get; set; }
         public int TotalAmount { get; set; }
         public string? Status { get; set; }
-        public int CartId { get; set; }
+        //public int CartId { get; set; }
         public int AddressId { get; set; }
         public virtual Address Address { get; set; } = null!;
         public virtual ICollection<OrderDetail> OrderDetails { get; set; } = new List<OrderDetail>();

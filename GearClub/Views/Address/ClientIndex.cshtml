@@ -1,0 +1,52 @@
+﻿@model IEnumerable<Address>
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_LayoutClient.cshtml";
+}
+<!-- Breadcrumb Start -->
+<div class="container-fluid">
+    <div class="row px-xl-5">
+        <div class="col-12">
+            <nav class="breadcrumb bg-light mb-30">
+                <a class="breadcrumb-item text-dark" href="/Home/Index">Trang chủ</a>
+                <a class="breadcrumb-item text-dark" asp-area="Identity" asp-page="/Account/Manage/Index">Tài khoản</a>
+                <span class="breadcrumb-item active">Sổ địa chỉ</span>
+            </nav>
+        </div>
+    </div>
+</div>
+<!-- Breadcrumb End -->
+<!-- Content Start -->
+<div class="container-fluid">
+    <h2 class="section-title position-relative text-uppercase mx-xl-5 mb-4">
+        <span class="bg-secondary pr-3">Địa chỉ</span>
+    </h2>
+    <div class="row px-xl-5">
+        <div class="col-12">
+            <div class="list-group">
+                @foreach (var item in Model)
+                {
+                    <a href="/Address/Detail/@item.AddressId" class="list-group-item list-group-item-action mb-3" aria-current="true">
+                        <div class="d-flex w-100 justify-content-between">
+                            <h5 class="mb-1">@item.Recipient | @item.PhoneNumber</h5>
+                            @if (item.IsDefault)
+                            {
+                                <small>
+                                    Mặc định
+                                </small>
+                            }
+                        </div>
+                        <p class="mb-1">@item.Details</p>
+                        <p class="mb-1">@item.ToString()</p>                        
+                    </a>
+                }
+            </div>
+            <a href="/Address/Create" class="btn btn-primary">Tạo mới</a>
+        </div>
+    </div>
+
+</div>
+<!-- Content End -->
+
+
