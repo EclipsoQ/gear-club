@@ -20,7 +20,13 @@ namespace GearClub.Application.Services
         }
         public bool AddToCart(CartDetail line)
         {
-            var lineToUpdate = _cartDetailRepo.GetAll().FirstOrDefault(c => c.ProductId == line.ProductId);
+            if (_productRepo.GetById(line.ProductId).StockQuantity == 0)
+            {
+                return false;
+            }
+
+            var lineToUpdate = _cartDetailRepo.GetAll().FirstOrDefault(c => c.ProductId == line.ProductId 
+                && c.CartId == line.CartId);
             if (lineToUpdate == null)
             {
                 try
@@ -127,7 +133,7 @@ namespace GearClub.Application.Services
 
         public Cart GetCartByUser(string userId)
         {
-            return _cartRepo.GetAll().FirstOrDefault(c => c.UserId == userId);
+            return _cartRepo.GetAll().FirstOrDefault(c => c.UserId == userId && c.IsCheckedOut == false);
         }
 
         public bool RemoveLine(int cartLineId)
@@ -165,6 +171,11 @@ namespace GearClub.Application.Services
         {
             var line = _cartDetailRepo.GetById(lineId);
             return _cartRepo.GetById(line.CartId);
+        }
+
+        public List<CartDetail> GetDetails(int cartId)
+        {
+            return _cartDetailRepo.GetAll().Where(cd => cd.CartId == cartId).ToList();
         }
     }
 }

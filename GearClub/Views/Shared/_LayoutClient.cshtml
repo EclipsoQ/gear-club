@@ -9,7 +9,10 @@
     <meta content="Free HTML Templates" name="description">
 
     <!-- Favicon -->
-    <link href="/img/favicon.ico" rel="icon">
+    <link rel="apple-touch-icon" sizes="180x180" href="/img/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/img/favicon/site.webmanifest">
 
     <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -79,13 +82,13 @@
                 </a>
             </div>
             <div class="col-lg-4 col-6 text-left">
-                <form action="">
+                <form asp-action="SearchProduct" asp-controller="Product" method="get">
                     <div class="input-group">
                         <input type="text" class="form-control" placeholder="Tìm kiếm sản phẩm">
                         <div class="input-group-append">
-                            <span class="input-group-text bg-transparent text-primary">
+                            <button type="submit" class="btn btn-primary">
                                 <i class="fa fa-search"></i>
-                            </span>
+                            </button>
                         </div>
                     </div>
                 </form>
@@ -119,6 +122,7 @@
                                 <div class="dropdown-menu bg-primary rounded-0 border-0 m-0">
                                     <a href="/Cart/Index" class="dropdown-item">Giỏ hàng</a>
                                     <a href="/Order/Checkout" class="dropdown-item">Thanh toán</a>
+                                    <a href="/Order/Index" class="dropdown-item">Đơn hàng</a>
 
                                 </div>
                             </div>
@@ -158,18 +162,18 @@
                     <div class="col-md-4 mb-5">
                         <h5 class="text-secondary text-uppercase mb-4">Chuyển hướng</h5>
                         <div class="d-flex flex-column justify-content-start">
-                            <a class="text-secondary mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Trang chủ</a>
-                            <a class="text-secondary mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Cửa hàng</a>
-                            <a class="text-secondary mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Giỏ hàng</a>
-                            <a class="text-secondary mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Thanh toán</a>
+                            <a class="text-secondary mb-2" href="/Home/Index"><i class="fa fa-angle-right mr-2"></i>Trang chủ</a>
+                            <a class="text-secondary mb-2" href="/Product/ViewProducts"><i class="fa fa-angle-right mr-2"></i>Cửa hàng</a>
+                            <a class="text-secondary mb-2" href="/Cart/Index"><i class="fa fa-angle-right mr-2"></i>Giỏ hàng</a>
+                            <a class="text-secondary mb-2" href="/Order/Checkout"><i class="fa fa-angle-right mr-2"></i>Thanh toán</a>
                             <a class="text-secondary" href="#"><i class="fa fa-angle-right mr-2"></i>Liên hệ</a>
                         </div>
                     </div>
                     <div class="col-md-4 mb-5">
                         <h5 class="text-secondary text-uppercase mb-4">Tài khoản</h5>
                         <div class="d-flex flex-column justify-content-start">
-                            <a class="text-secondary mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Thông tin</a>
-                            <a class="text-secondary mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Sổ địa chỉ</a>
+                            <a class="text-secondary mb-2" href="/Identity/Account/Manage"><i class="fa fa-angle-right mr-2"></i>Thông tin</a>
+                            <a class="text-secondary mb-2" href="/Address/Index"><i class="fa fa-angle-right mr-2"></i>Sổ địa chỉ</a>
                             <a class="text-secondary mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Đăng xuất</a>
                         </div>
                     </div>
@@ -228,6 +232,7 @@
 
     <!-- Cart Scripts-->
     <script src="/js/cart/cart.js"></script>
+    <script src="~/js/order.js"></script>
     @RenderSection("Scripts", required: false)
 </body>
 

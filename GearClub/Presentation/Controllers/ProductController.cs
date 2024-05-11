@@ -38,7 +38,7 @@ namespace GearClub.Presentation.Controllers
         }
 
         [HttpGet]
-        public IActionResult SearchProduct(int? page, string search)
+        public IActionResult SearchProduct(int? page, string? search)
         {
             int pageNumber = page ?? 1;
             int pageSize = 9;

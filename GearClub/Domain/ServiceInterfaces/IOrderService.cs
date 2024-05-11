@@ -4,11 +4,12 @@ namespace GearClub.Domain.ServiceInterfaces
 {
     public interface IOrderService 
     {
-        bool CreateOrder(Order order);
-        bool CancelOrder(Order order);
+        void CreateOrder(Order order);
+        bool CancelOrder(int id);
         bool UpdateOrder(Order order);
         List<Order> GetAllOrders();
         Order GetOrderDetail(int id);
         List<Order>? GetOrdersByUser(string userId);
+        void ProcessOrder(Order order, Cart cart);
     }
 }

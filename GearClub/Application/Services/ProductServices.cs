@@ -42,6 +42,10 @@ namespace GearClub.Application.Services
         {
             var filteredProducts = _productRepo.GetAll();           
             //filter by price
+            if(filter.PriceRange.Contains("all"))
+            {
+                return filteredProducts;
+            }
             if (filter.PriceRange != null && filter.PriceRange.Count > 0
                 && !filter.PriceRange.Contains("all"))
             {
@@ -61,8 +65,12 @@ namespace GearClub.Application.Services
 
             //filter by brand
             var brands = filter.Brand;
-            filteredProducts = filteredProducts.Where(p => brands.Any(b => p.Brand.ToLower() == b)).ToList();
+            if (filter.Brand.Contains("all"))
+            {
+                return filteredProducts;
+            }
 
+            filteredProducts = filteredProducts.Where(p => brands.Any(b => p.Brand.ToLower() == b)).ToList();
             return filteredProducts;
         }
 
@@ -102,8 +110,9 @@ namespace GearClub.Application.Services
             return products;
         }
 
-        public IEnumerable<Product> SearchProduct(string searchString)
+        public IEnumerable<Product> SearchProduct(string? searchString)
         {
+            if (searchString == null) return _productRepo.GetAll();
             return _productRepo.GetAll().Where(p => p.Name.Contains(searchString, StringComparison.OrdinalIgnoreCase));
         }
 

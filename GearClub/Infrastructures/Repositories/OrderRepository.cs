@@ -37,7 +37,10 @@ namespace GearClub.Infrastructures.Repositories
 
         public Order GetById(int id)
         {
-            return _context.Orders.Find(id);
+            return _context.Orders.Include(o => o.Address)
+                .ThenInclude(a => a.User)
+                .Include(o => o.OrderDetails)
+                .FirstOrDefault(o => o.OrderId == id);
         }
 
         public void SaveChanges()

@@ -134,6 +134,13 @@ namespace GearClub.Presentation.Controllers
                 return Redirect("/Address/Index/" + userManager.GetUserId(User));
             }
             return View("ClientCreate", address);                        
-        }        
+        }
+
+        [HttpGet]
+        public IActionResult GetAddressCard(int id)
+        {
+            var address = addressService.GetAddressById(id);
+            return PartialView("/Views/Shared/PartialViews/_AddressPartial.cshtml", address);
+        }
     }
 }

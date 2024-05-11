@@ -14,7 +14,7 @@ namespace GearClub.Domain.ServiceInterfaces
         bool DeleteProduct(int productId);
         bool DeleteProduct(Product product);
         bool UpdateProduct(int productId, Product product);
-        IEnumerable<Product> SearchProduct(string searchString);
+        IEnumerable<Product> SearchProduct(string? searchString);
         IEnumerable<Product> FilterProduct(FilterData filter);
     }
 }

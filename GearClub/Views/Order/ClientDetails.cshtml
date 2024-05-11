@@ -1,0 +1,102 @@
+﻿@model Order
+
+@{
+    ViewData["Title"] = "ClientDetails";
+    Layout = "~/Views/Shared/_LayoutClient.cshtml";
+
+    string payment = "";
+    switch (Model.Payment)
+    {
+        case "cod":
+            payment += "Thanh toán khi nhận hàng";
+            break;
+        case "paypal":
+            payment += "Paypal";
+            break;
+        case "banktransfer":
+            payment += "Chuyển khoản";
+            break;
+    }
+
+    string checkedOutStatus = Model.IsCheckedOut ? "Đã thanh toán" : "Chưa thanh toán";
+    string deliveryStatus = Model.IsDelivered ? "Đã giao hàng" : "Chưa giao hàng";
+}
+
+<!-- Breadcrumb Start -->
+<div class="container-fluid">
+    <div class="row px-xl-5">
+        <div class="col-12">
+            <nav class="breadcrumb bg-light mb-30">
+                <a class="breadcrumb-item text-dark" href="/Home/Index">Trang chủ</a>
+                <a class="breadcrumb-item text-dark" href="/Order/Index/">Đơn hàng</a>
+                <span class="breadcrumb-item active">Chi tiết đơn</span>
+            </nav>
+        </div>
+    </div>
+</div>
+<!-- Breadcrumb End -->
+<!-- Content Start -->
+<div class="container-fluid">
+    <h2 class="section-title position-relative text-uppercase mx-xl-5 mb-4">
+        <span class="bg-secondary pr-3">Đơn hàng</span>
+    </h2>
+    <div class="row px-xl-5">
+        <div class="col-12">
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item">
+                    <b>Mã đơn: </b>@Model.OrderId
+                </li>
+                <li class="list-group-item">
+                    <b>Ngày đặt:</b> @Model.OrderDate
+                </li>
+                <li class="list-group-item">
+                    <b>Thông tin nhận hàng</b>
+                    <a href="/Address/Detail/@Model.AddressId" class="list-group-item list-group-item-action mb-3" aria-current="true">
+                        <div class="d-flex w-100 justify-content-between">
+                            <h5 class="mb-1">@Model.Address.Recipient | @Model.Address.PhoneNumber</h5>                            
+                        </div>
+                        <p class="mb-1">@Model.Address.Details</p>
+                        <p class="mb-1">@Model.Address.ToString()</p>
+                    </a>
+                </li>                                
+                <li class="list-group-item">
+                    <b>Tiền hàng: </b>@Model.Subtotal.ToString("###,###,###")₫
+                </li>
+                <li class="list-group-item">
+                    <b>Phí vận chuyển: </b>@Model.ShippingFee.ToString("###,###,##0")₫
+                </li>
+                <li class="list-group-item">
+                    <b>Thành tiền: </b>@Model.Total.ToString("###,###,###")₫
+                </li>
+                <li class="list-group-item">
+                    <b>Phương thức thanh toán: </b>@payment
+                </li> 
+                <li class="list-group-item">
+                    <b>Tình trạng đơn: </b>@Model.Status
+                </li>
+                <li class="list-group-item">
+                    <b>Tình trạng vận chuyển: </b>@deliveryStatus
+                </li>
+                <li class="list-group-item">
+                    <b>Tình trạng thanh toán: </b>@checkedOutStatus
+                </li>
+            </ul>
+                   
+            @if (Model.Status == "Đã hủy" || Model.IsCheckedOut)
+            {
+                <a asp-action="Index" class="btn btn-primary" class="mt-2">Quay lại</a>
+            }
+            else
+            {
+                <form asp-action="CancelOrder" class="mt-2" method="post">
+                    <input type="hidden" asp-for="@Model.OrderId" />
+                    <input type="submit" value="Hủy đơn" class="btn btn-danger" /> |
+                    <a asp-action="Index" class="btn btn-primary">Quay lại</a>
+                </form>
+                
+            }  
+        </div>
+    </div>
+</div>
+<!-- Content End -->
+

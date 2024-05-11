@@ -4,15 +4,15 @@ using GearClub.Domain.RepoInterfaces;
 
 namespace GearClub.Infrastructures.Repositories
 {
-    public class CartDetailRepository : IRepository<CartDetail>
+    public class CartRepository : IRepository<Cart>
     {
         private readonly GearClubContext _context;
-        public CartDetailRepository(GearClubContext context)
+        public CartRepository(GearClubContext context)
         {
             _context = context;
         }
 
-        public void Add(CartDetail entity)
+        public void Add(Cart entity)
         {
             _context.Add(entity);
             _context.SaveChanges();
@@ -28,20 +28,20 @@ namespace GearClub.Infrastructures.Repositories
             throw new NotImplementedException();
         }
 
-        public void Delete(CartDetail entity)
+        public void Delete(Cart entity)
         {
             _context.Remove(entity);
             _context.SaveChanges();
         }
 
-        public IEnumerable<CartDetail> GetAll()
+        public IEnumerable<Cart> GetAll()
         {
-            return _context.CartDetails.ToList();
+            return _context.Carts.ToList();
         }
 
-        public CartDetail GetById(int id)
+        public Cart GetById(int id)
         {
-            return _context.CartDetails.Find(id);
+            return _context.Carts.Find(id);
         }
 
         public void SaveChanges()
@@ -49,7 +49,7 @@ namespace GearClub.Infrastructures.Repositories
             _context.SaveChanges();
         }
 
-        public void Update(CartDetail entity)
+        public void Update(Cart entity)
         {
             _context.Update(entity);
             _context.SaveChanges();

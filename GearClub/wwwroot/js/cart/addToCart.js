@@ -5,8 +5,8 @@ cartBtns.forEach(function (btn) {
         var index = cartBtns.indexOf(btn);
         var productId = document.querySelectorAll(".product-id")[index].value;
         var data = {
-            quantity: 1,
-            productId: productId
+            Quantity: 1,
+            ProductId: productId
         }
         console.log(data);
 

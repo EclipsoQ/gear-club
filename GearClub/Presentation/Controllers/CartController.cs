@@ -100,7 +100,7 @@ namespace GearClub.Presentation.Controllers
                 }
                 else return StatusCode(500, "Internal Server Error");
             }
-            return Ok();
+            return View("UnauthorizedView");
         }
     }
 }

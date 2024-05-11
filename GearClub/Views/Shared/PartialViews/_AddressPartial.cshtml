@@ -1,0 +1,16 @@
+﻿@model Address
+<label>Thông tin địa chỉ</label>
+<ul class="list-group list-group-flush">
+    <li class="list-group-item">
+        <b>Họ tên: </b>@Model.Recipient
+    </li>
+    <li class="list-group-item">
+        <b>Số điện thoại:</b> @Model.PhoneNumber
+    </li>
+    <li class="list-group-item">
+        <b>Phường/Xã, Quận/Huyện, Tỉnh/Thành phố: </b>@Model.ToString()
+    </li>
+    <li class="list-group-item">
+        <b>Địa chỉ cụ thể: </b>@Model.Details
+    </li>
+</ul>

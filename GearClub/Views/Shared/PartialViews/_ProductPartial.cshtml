@@ -3,8 +3,7 @@
 
 <div class="col-lg-4 col-md-6 col-sm-6 pb-1 product-card">
     <div class="product-item bg-light mb-4">
-        <div class="product-img position-relative overflow-hidden">
-            <input type="hidden" value="@Model.ProductId" class="product-id"/>
+        <div class="product-img position-relative overflow-hidden">            
             <img class="img-fluid w-100" src="/img/ProductImages/PreviewImages/@Model.ProductId.ToString()/Preview.webp"
                  alt="@Model.Name">
             <div class="product-action">
@@ -20,7 +19,7 @@
             </div>
         </div>
         <div class="text-center py-4">
-            <a class="h6 text-decoration-none text-wrap" href="">@Model.Name</a>
+            <a class="h6 text-decoration-none text-wrap" href="/Product/ProductDetails/@Model.ProductId">@Model.Name</a>
             <div class="d-flex align-items-center justify-content-center mt-2">
                 <h5>@Model.Price.ToString("##,000,000")₫</h5><h6 class="text-muted ml-2"></h6>
             </div>

@@ -21,6 +21,9 @@ namespace GearClub.Domain.Models
         public string Brand { get; set; } = null!;
         [StringLength(50)]
         public string Model { get; set; } = null!;
+        /*public DateTime? Created_at { get; set; }
+        public DateTime? Modified_at { get; set; }
+        public DateTime? Deleted_at { get; set; }*/
         public virtual ICollection<Category_Product> Category_Products { get; set; } = new List<Category_Product>();
         public virtual ICollection<Image> Images { get; set; } = new List<Image>();
         public virtual ICollection<CartDetail>? CartDetails { get; set; }

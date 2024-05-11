@@ -31,7 +31,7 @@ builder.Services.Configure<IdentityOptions>(options =>
 
 /*builder.Services.ConfigureApplicationCookie(options =>
 {
-    options.AccessDeniedPath = "/Views/Shared/AccessDeniedView";
+    options.LoginPath = "/Identity/Account/Login";
 });*/
 
 // Add Repositories 

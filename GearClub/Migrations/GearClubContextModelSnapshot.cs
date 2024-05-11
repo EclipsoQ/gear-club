@@ -150,7 +150,7 @@ namespace GearClub.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("CartId"));
 
-                    b.Property<bool?>("IsCheckedOut")
+                    b.Property<bool>("IsCheckedOut")
                         .HasColumnType("bit");
 
                     b.Property<string>("UserId")
@@ -270,14 +270,26 @@ namespace GearClub.Migrations
                     b.Property<int>("AddressId")
                         .HasColumnType("int");
 
+                    b.Property<bool>("IsCheckedOut")
+                        .HasColumnType("bit");
+
+                    b.Property<bool>("IsDelivered")
+                        .HasColumnType("bit");
+
                     b.Property<DateTime>("OrderDate")
                         .HasColumnType("datetime2");
 
+                    b.Property<string>("Payment")
+                        .IsRequired()
+                        .HasMaxLength(10)
+                        .HasColumnType("nvarchar(10)");
+
                     b.Property<string>("Status")
+                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<int>("TotalAmount")
-                        .HasColumnType("int");
+                    b.Property<decimal>("Subtotal")
+                        .HasColumnType("decimal(10,2)");
 
                     b.HasKey("OrderId");
 

@@ -1,34 +1,72 @@
 ﻿using GearClub.Domain.Models;
 using GearClub.Domain.RepoInterfaces;
 using GearClub.Domain.ServiceInterfaces;
+using Microsoft.CodeAnalysis.CSharp.Syntax;
 
 namespace GearClub.Application.Services
 {
     public class OrderService : IOrderService
     {
         private readonly IRepository<Order> _orderRepo;
-        public OrderService(IRepository<Order> orderRepo)
+        private readonly IRepository<Cart> _cartRepo;
+        private readonly IRepository<OrderDetail> _orderDetailRepo;
+        private readonly IRepository<CartDetail> _cartDetailRepo;
+        private readonly IRepository<Product> _productlRepo;
+        public OrderService(IRepository<Order> orderRepo, IRepository<Cart> cartRepo, 
+            IRepository<OrderDetail> orderDetailRepo, IRepository<CartDetail> cartDetailRepo, 
+            IRepository<Product> productlRepo)
         {
             _orderRepo = orderRepo;
+            _cartRepo = cartRepo;
+            _orderDetailRepo = orderDetailRepo;
+            _cartDetailRepo = cartDetailRepo;
+            _productlRepo = productlRepo;
         }
-        public bool CancelOrder(Order order)
+        public bool CancelOrder(int id)
         {
-            throw new NotImplementedException();
+            Order order = _orderRepo.GetById(id);
+            if (order == null)
+            {
+                return false;
+            }
+
+            order.Status = "Đã hủy";
+            _orderRepo.Update(order);
+
+            foreach(var line in order.OrderDetails)
+            {
+                var product = _productlRepo.GetById(line.ProductId);
+                if (product == null)
+                {
+                    return false;
+                }
+                product.StockQuantity += line.Quantity;
+                _productlRepo.Update(product);
+            }
+
+            return true;
         }
 
-        public bool CreateOrder(Order order)
+        public void CreateOrder(Order order)
         {
-            throw new NotImplementedException();
+            try
+            {                
+                _orderRepo.Add(order);                
+            }
+            catch (Exception e)
+            {
+                throw new Exception(e.Message);
+            }
         }
 
         public List<Order> GetAllOrders()
         {
-            throw new NotImplementedException();
+            return _orderRepo.GetAll().ToList();
         }
 
         public Order GetOrderDetail(int id)
         {
-            throw new NotImplementedException();
+            return _orderRepo.GetById(id);
         }
 
         public List<Order>? GetOrdersByUser(string id)
@@ -37,9 +75,59 @@ namespace GearClub.Application.Services
             return orders;
         }
 
+        public void ProcessOrder(Order order, Cart cart)
+        {
+            try
+            {
+                // Create new order
+                CreateOrder(order);
+                var orderId = GetOrdersByUser(cart.UserId)
+                    .FirstOrDefault(o => o.OrderDate == order.OrderDate).OrderId;
+
+                // Copy details from cart
+                var details = _cartDetailRepo.GetAll().Where(cd => cd.CartId == cart.CartId);
+                decimal subtotal = 0;
+                foreach (var item in details)
+                {
+                    OrderDetail orderDetail = new OrderDetail()
+                    {
+                        ProductId = item.ProductId,
+                        Quantity = item.Quantity,
+                        OrderId = orderId,                        
+                    };
+                    var product = _productlRepo.GetById(item.ProductId);
+                    product.StockQuantity -= item.Quantity;
+                    _productlRepo.Update(product);
+
+                    subtotal += item.Quantity + item.Product.Price;
+                    _orderDetailRepo.Add(orderDetail);
+                }
+
+                order.Subtotal = subtotal;
+                _orderRepo.Update(order);
+
+                cart.IsCheckedOut = true;
+                _cartRepo.Update(cart);
+
+            }
+            catch (Exception e)
+            {
+                throw new Exception(e.Message);
+            }
+        }
+
         public bool UpdateOrder(Order order)
         {
-            throw new NotImplementedException();
+           try
+           {
+               _orderRepo.Update(order);
+               return true;
+           }
+           catch (Exception)
+           {
+               return false;
+           }
         }
+        
     }
 }

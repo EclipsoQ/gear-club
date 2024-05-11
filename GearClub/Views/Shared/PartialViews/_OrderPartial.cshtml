@@ -1,0 +1,32 @@
+﻿@model GearClub.Domain.Models.Order
+
+@{
+    string payment = "";
+    switch(Model.Payment)
+    {
+        case "cod":
+            payment += "Thanh toán khi nhận hàng";
+            break;
+        case "paypal":
+            payment += "Paypal";
+            break;
+        case "banktransfer":
+            payment += "Chuyển khoản";
+            break;
+    }
+}
+
+<tr class="item-row">
+    <td class="align-middle item-price">@Model.OrderId</td>
+    <td class="align-middle">
+        @Model.OrderDate
+    </td>
+    <td class="align-middle item-subtotal">@Model.Address.ToString()</td>
+    <td class="align-middle item-subtotal">@payment</td>
+    <td class="align-middle item-subtotal">@Model.Status</td>
+    <td class="align-middle item-subtotal">@Model.Total.ToString("###,###,##0")₫</td>
+
+    <td class="align-middle">
+        <a class="btn btn-sm btn-primary" href="/Order/Detail/@Model.OrderId">Chi tiết</a>
+    </td>
+</tr>

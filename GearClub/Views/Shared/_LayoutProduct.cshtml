@@ -9,7 +9,10 @@
     <meta content="Free HTML Templates" name="description">
 
     <!-- Favicon -->
-    <link href="/img/favicon.ico" rel="icon">
+    <link rel="apple-touch-icon" sizes="180x180" href="/img/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/img/favicon/site.webmanifest">
 
     <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -81,10 +84,10 @@
                 <form asp-action="SearchProduct" asp-controller="Product" method="get">
                     <div class="input-group">
                         <input name="search" type="text" class="form-control" placeholder="Tìm kiếm sản phẩm">
-                        <div class="input-group-append">
-                            <span class="input-group-text bg-transparent text-primary">
+                        <div class="input-group-append">                                                            
+                            <button type="submit" class="btn btn-primary">
                                 <i class="fa fa-search"></i>
-                            </span>
+                            </button>                           
                         </div>
                     </div>
                 </form>
@@ -118,6 +121,7 @@
                                 <div class="dropdown-menu bg-primary rounded-0 border-0 m-0">
                                     <a href="/Cart/Index" class="dropdown-item">Giỏ hàng</a>
                                     <a href="/Order/Checkout" class="dropdown-item">Thanh toán</a>
+                                    <a href="/Order/Index" class="dropdown-item">Đơn hàng</a>
 
                                 </div>
                             </div>
