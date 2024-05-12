@@ -11,16 +11,16 @@ namespace GearClub.Application.Services
         private readonly IRepository<Cart> _cartRepo;
         private readonly IRepository<OrderDetail> _orderDetailRepo;
         private readonly IRepository<CartDetail> _cartDetailRepo;
-        private readonly IRepository<Product> _productlRepo;
+        private readonly IRepository<Product> _producRepo;
         public OrderService(IRepository<Order> orderRepo, IRepository<Cart> cartRepo, 
             IRepository<OrderDetail> orderDetailRepo, IRepository<CartDetail> cartDetailRepo, 
-            IRepository<Product> productlRepo)
+            IRepository<Product> producRepo)
         {
             _orderRepo = orderRepo;
             _cartRepo = cartRepo;
             _orderDetailRepo = orderDetailRepo;
             _cartDetailRepo = cartDetailRepo;
-            _productlRepo = productlRepo;
+            _producRepo = producRepo;
         }
         public bool CancelOrder(int id)
         {
@@ -35,13 +35,13 @@ namespace GearClub.Application.Services
 
             foreach(var line in order.OrderDetails)
             {
-                var product = _productlRepo.GetById(line.ProductId);
+                var product = _producRepo.GetById(line.ProductId);
                 if (product == null)
                 {
                     return false;
                 }
                 product.StockQuantity += line.Quantity;
-                _productlRepo.Update(product);
+                _producRepo.Update(product);
             }
 
             return true;
@@ -62,6 +62,11 @@ namespace GearClub.Application.Services
         public List<Order> GetAllOrders()
         {
             return _orderRepo.GetAll().ToList();
+        }
+
+        public Order? GetOrderById(int id)
+        {
+            return _orderRepo.GetById(id);
         }
 
         public Order GetOrderDetail(int id)
@@ -95,9 +100,9 @@ namespace GearClub.Application.Services
                         Quantity = item.Quantity,
                         OrderId = orderId,                        
                     };
-                    var product = _productlRepo.GetById(item.ProductId);
+                    var product = _producRepo.GetById(item.ProductId);
                     product.StockQuantity -= item.Quantity;
-                    _productlRepo.Update(product);
+                    _producRepo.Update(product);
 
                     subtotal += item.Quantity + item.Product.Price;
                     _orderDetailRepo.Add(orderDetail);

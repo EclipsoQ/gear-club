@@ -4,6 +4,7 @@ using GearClub.Domain.RepoInterfaces;
 using GearClub.Domain.ServiceInterfaces;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Rendering;
 using System.Numerics;
 
 namespace GearClub.Presentation.Controllers
@@ -40,7 +41,8 @@ namespace GearClub.Presentation.Controllers
             var orders = orderService.GetOrdersByUser(user);
             if (User.IsInRole("Admin"))
             {
-                return View("AdminIndex", orders);
+                var allOrders = orderService.GetAllOrders();
+                return View("AdminIndex", allOrders);
             }
             return View("ClientIndex", orders);
         }
@@ -118,6 +120,50 @@ namespace GearClub.Presentation.Controllers
                 return RedirectToAction("Index");
             }
             else return StatusCode(500, "Internal server error");
+        }
+
+        [HttpGet]        
+        public IActionResult Edit (int id)
+        {
+            if (User.IsInRole("Admin"))
+            {
+                var order = orderService.GetOrderById(id);
+                if (order == null)
+                {
+                    return View("NotFound");
+                }
+
+                List<string> status = new List<string>()
+                {
+                    "Đã xác nhận",
+                    "Đang chuẩn bị hàng",
+                    "Đã bàn giao cho đơn vị vận chuyển",
+                    "Đang giao hàng"
+                };                 
+                ViewBag.Statuses = new SelectList(status);
+                return View(order);                
+            }
+            
+            return View("UnauthorizedView");
+        }
+
+        [HttpPost]
+        public IActionResult Edit (Order order)
+        {
+            if (User.IsInRole("Admin") || User.IsInRole("Moderator"))
+            {
+                if (order == null)
+                {
+                    return View("NotFound");
+                }
+
+                if (orderService.UpdateOrder(order))
+                {
+                    return RedirectToAction("Index");                    
+                }
+                return View();
+            }
+            return View("UnauthorizedView");
         }
     }
 }

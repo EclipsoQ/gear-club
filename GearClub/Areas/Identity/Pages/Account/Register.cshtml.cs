@@ -29,20 +29,24 @@ namespace GearClub.Areas.Identity.Pages.Account
         private readonly IUserStore<ApplicationUser> _userStore;
         private readonly IUserEmailStore<ApplicationUser> _emailStore;
         private readonly ILogger<RegisterModel> _logger;
+        private readonly RoleManager<IdentityRole> _roleManager;
         //private readonly IEmailSender _emailSender;
 
         public RegisterModel(
             UserManager<ApplicationUser> userManager,
             IUserStore<ApplicationUser> userStore,
             SignInManager<ApplicationUser> signInManager,
-            ILogger<RegisterModel> logger)
-            //IEmailSender emailSender)
+            ILogger<RegisterModel> logger,
+            RoleManager<IdentityRole> roleManager)
+
+        //IEmailSender emailSender)
         {
             _userManager = userManager;
             _userStore = userStore;
             _emailStore = GetEmailStore();
             _signInManager = signInManager;
             _logger = logger;
+            _roleManager = roleManager;
             //_emailSender = emailSender;
         }
 
@@ -139,6 +143,14 @@ namespace GearClub.Areas.Identity.Pages.Account
                     var userId = await _userManager.GetUserIdAsync(user);
                     var code = await _userManager.GenerateEmailConfirmationTokenAsync(user);
                     code = WebEncoders.Base64UrlEncode(Encoding.UTF8.GetBytes(code));
+
+                    string roleName = "Customer";
+                    /*if (!await _roleManager.RoleExistsAsync(roleName))
+                    {
+                        var role = new IdentityRole(roleName);
+                        await _roleManager.CreateAsync(role);
+                    }*/
+                    await _userManager.AddToRoleAsync(user, roleName);
 
                     var callbackUrl = Url.Page(
                         "/Account/ConfirmEmail",

@@ -1,0 +1,39 @@
+﻿@model IEnumerable<Order>
+@{
+    Layout = null;
+}
+
+<div class="table-responsive">
+    <table class="table text-start align-middle table-bordered table-hover mb-0">
+        <thead>
+            <tr class="text-dark">
+                <th scope="col"><input class="form-check-input" type="checkbox"></th>
+                <th scope="col">Ngày đặt hàng</th>
+                <th scope="col">Mã đơn hàng</th>
+                <th scope="col">Khách hàng</th>
+                <th scope="col">Thành tiền</th>
+                <th scope="col">Trạng thái</th>
+                <th scope="col">Thao tác</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td><input class="form-check-input" type="checkbox"></td>
+                    <td>@item.OrderDate</td>
+                    <td>@item.OrderId</td>
+                    <td>@item.Address.Recipient</td>
+                    <td>@item.Total.ToString("###,###,###")₫</td>
+                    <td>@item.Status</td>
+                    <td>
+                        <a class="btn btn-sm btn-primary" asp-action="Detail" asp-controller="Orders">Chi tiết</a>
+                        <a class="btn btn-sm btn-secondary" href="">Sửa</a>
+                    </td>
+                </tr>
+            }
+
+
+        </tbody>
+    </table>
+</div>

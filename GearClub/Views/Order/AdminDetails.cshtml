@@ -1,0 +1,75 @@
+﻿@model Order
+@{
+    ViewData["Title"] = "AdminDetail";
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+
+    string payment = "";
+    switch (Model.Payment)
+    {
+        case "cod":
+            payment += "Thanh toán khi nhận hàng";
+            break;
+        case "paypal":
+            payment += "Paypal";
+            break;
+        case "banktransfer":
+            payment += "Chuyển khoản";
+            break;
+    }
+
+    string checkedOutStatus = Model.IsCheckedOut ? "Đã thanh toán" : "Chưa thanh toán";
+    string deliveryStatus = Model.IsDelivered ? "Đã giao hàng" : "Chưa giao hàng";
+}
+
+<div class="container-fluid pt-4 px-4">
+    <div class="row g-4">     
+        <h2 class="text-uppercase">
+            <span class="pr-3">Đơn hàng</span>
+        </h2>
+        <ul class="list-group list-group-flush">
+            <li class="list-group-item">
+                <b>Mã đơn: </b>@Model.OrderId
+            </li>
+            <li class="list-group-item">
+                <b>Ngày đặt:</b> @Model.OrderDate
+            </li>
+            <li class="list-group-item">
+                <b>Thông tin nhận hàng</b>
+                <a href="/Address/Detail/@Model.AddressId" class="list-group-item list-group-item-action mt-2" aria-current="true">
+                    <div class="d-flex w-100 justify-content-between">
+                        <h5 class="mb-1">@Model.Address.Recipient | @Model.Address.PhoneNumber</h5>
+                    </div>
+                    <p class="mb-1">@Model.Address.Details</p>
+                    <p class="mb-1">@Model.Address.ToString()</p>
+                </a>
+            </li>
+            <li class="list-group-item">
+                <b>Tiền hàng: </b>@Model.Subtotal.ToString("###,###,###")₫
+            </li>
+            <li class="list-group-item">
+                <b>Phí vận chuyển: </b>@Model.ShippingFee.ToString("###,###,##0")₫
+            </li>
+            <li class="list-group-item">
+                <b>Thành tiền: </b>@Model.Total.ToString("###,###,###")₫
+            </li>
+            <li class="list-group-item">
+                <b>Phương thức thanh toán: </b>@payment
+            </li>
+            <li class="list-group-item">
+                <b>Tình trạng đơn: </b>@Model.Status
+            </li>
+            <li class="list-group-item">
+                <b>Tình trạng vận chuyển: </b>@deliveryStatus
+            </li>
+            <li class="list-group-item">
+                <b>Tình trạng thanh toán: </b>@checkedOutStatus
+            </li>
+        </ul>
+        
+        <div class="col-4">
+            <a asp-action="Edit" asp-route-id="@Model.OrderId" class="btn btn-primary">Sửa</a> |
+            <a asp-action="Index" class="btn btn-secondary">Quay lại</a>
+        </div>      
+    </div>
+</div>
+

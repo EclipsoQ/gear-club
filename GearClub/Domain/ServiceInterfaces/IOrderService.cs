@@ -11,5 +11,6 @@ namespace GearClub.Domain.ServiceInterfaces
         Order GetOrderDetail(int id);
         List<Order>? GetOrdersByUser(string userId);
         void ProcessOrder(Order order, Cart cart);
+        Order? GetOrderById(int id);
     }
 }
