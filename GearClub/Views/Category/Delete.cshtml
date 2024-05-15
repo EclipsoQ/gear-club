@@ -1,0 +1,56 @@
+﻿@model GearClub.Domain.Models.Category
+
+@{
+    ViewData["Title"] = "Details";
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+
+    TimeZoneInfo localTimeZone = TimeZoneInfo.Local;
+}
+
+<div class="container-fluid pt-4 px-4">
+    <h2 class="text-uppercase">
+        <span class="pr-3">Danh mục</span>
+    </h2>
+    <div class="row g-4">
+        <div class="bg-light rounded h-100 p-4">
+            <ul class="list-group list-group-flush col-md-7 mb-3">
+                <li class="list-group-item">
+                    <b>Mã danh mục</b> @Model.CategoryId
+                </li>
+                <li class="list-group-item">
+                    <b>Tên danh mục</b> @Model.Name
+                </li>
+                <li class="list-group-item">
+                    <b>Ảnh xem trước</b><br />
+                    @if (Model.Image != null)
+                    {
+                        <img src="@Model.Image.Link" width="300" height="300" class="border img-fluid" />
+                    }
+                    else
+                    {
+                        <span>Chưa có ảnh</span>
+                    }
+                </li>
+
+                <li class="list-group-item">
+                    <b>Tạo lúc: </b> @TimeZoneInfo.ConvertTimeFromUtc((DateTime)Model.Created_at, localTimeZone)
+                </li>
+                @if (Model.Modified_at != null)
+                {
+                    DateTime modifiedTime = TimeZoneInfo.ConvertTimeFromUtc((DateTime)Model.Modified_at, localTimeZone);
+                    <li class="list-group-item">
+                        <b>Sửa lần cuối: </b> @modifiedTime
+                    </li>
+                }                
+            </ul>
+            <div>
+                <form asp-action="Delete">
+                    <input type="hidden" asp-for="CategoryId" />
+                    <input type="submit" value="Xóa" class="btn btn-danger" /> |
+                    <a asp-action="Index" class="btn btn-secondary">Quay lại</a>
+                </form>
+            </div>
+        </div>
+
+    </div>
+</div>

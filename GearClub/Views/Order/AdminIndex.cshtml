@@ -38,9 +38,11 @@
                 <tbody>
                     @foreach (var item in Model)
                     {
+                        TimeZoneInfo localTimeZone = TimeZoneInfo.Local;
+                        DateTime localTime = TimeZoneInfo.ConvertTimeFromUtc((DateTime)item.OrderDate, localTimeZone);
                         <tr>
                             <td>
-                                @item.OrderDate
+                                @localTime
                             </td>
                             <td>
                                 @item.Total.ToString("###,###,###")₫

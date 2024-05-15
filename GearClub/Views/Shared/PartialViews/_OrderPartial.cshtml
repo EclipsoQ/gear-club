@@ -14,12 +14,14 @@
             payment += "Chuyển khoản";
             break;
     }
+    TimeZoneInfo localTimeZone = TimeZoneInfo.Local;
+    DateTime localTime = TimeZoneInfo.ConvertTimeFromUtc((DateTime)Model.OrderDate, localTimeZone);
 }
 
 <tr class="item-row">
     <td class="align-middle item-price">@Model.OrderId</td>
     <td class="align-middle">
-        @Model.OrderDate
+        @localTime
     </td>
     <td class="align-middle item-subtotal">@Model.Address.ToString()</td>
     <td class="align-middle item-subtotal">@payment</td>

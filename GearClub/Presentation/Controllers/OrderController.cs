@@ -135,6 +135,7 @@ namespace GearClub.Presentation.Controllers
 
                 List<string> status = new List<string>()
                 {
+                    "Đã hủy",
                     "Đã xác nhận",
                     "Đang chuẩn bị hàng",
                     "Đã bàn giao cho đơn vị vận chuyển",

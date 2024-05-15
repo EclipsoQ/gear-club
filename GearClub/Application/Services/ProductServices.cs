@@ -4,6 +4,10 @@ using GearClub.Domain.ServiceInterfaces;
 using GearClub.Infrastructures.ExtensionMethods;
 using GearClub.Presentation.CompositeModels;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
+using SixLabors.ImageSharp;
+using SixLabors.ImageSharp.Processing;
+using Image = SixLabors.ImageSharp.Image;
 
 namespace GearClub.Application.Services
 {
@@ -11,11 +15,11 @@ namespace GearClub.Application.Services
     {
         private readonly IRepository<Product> _productRepo;
         private readonly IRepository<Specification> _specRepo;
-        private readonly IRepository<Image> _imageRepo;
+        private readonly IRepository<Domain.Models.Image> _imageRepo;
         private readonly IRepository<Category_Product> _categoryProductRepo;
 
-        public ProductServices(IRepository<Product> productRepo, IRepository<Specification> specRepo, 
-            IRepository<Image> imageRepo, IRepository<Category_Product> categoryProductRepo)
+        public ProductServices(IRepository<Product> productRepo, IRepository<Specification> specRepo,
+            IRepository<Domain.Models.Image> imageRepo, IRepository<Category_Product> categoryProductRepo)
         {
             _productRepo = productRepo;
             _specRepo = specRepo;
@@ -23,11 +27,71 @@ namespace GearClub.Application.Services
             _categoryProductRepo = categoryProductRepo;
         }
 
-        public bool CreateProduct(Product product)
+        public void CreateProduct(ProductViewModel model)
         {
-            throw new NotImplementedException();
-        }
+            if (model == null) throw new ArgumentNullException("model");
+            if (_productRepo.GetAll().FirstOrDefault(p => p.Name == model.Product.Name) != null)
+            {
+                throw new InvalidDataException("Name already taken");
+            }
 
+            _productRepo.Add(model.Product);
+            var id = _productRepo.GetAll().FirstOrDefault(p => p.Name == model.Product.Name).ProductId;
+
+            //File handler                
+            if (model.PreviewImage == null || model.DetailImages == null)
+            {
+                throw new ArgumentNullException("No images provided");
+            }
+            try
+            {
+                var previewImageName = "Preview.webp";
+                var previewImagePath = Path.Combine("wwwroot", "img", "ProductImages", "PreviewImages", id.ToString(), previewImageName);
+
+                Directory.CreateDirectory(Path.GetDirectoryName(previewImagePath));
+
+                using (var image = Image.Load(model.PreviewImage.OpenReadStream()))
+                {
+                    var width = 600;
+                    var height = 600;
+                    image.Mutate(x => x.Resize(width, height));
+
+                    // Save the image directly to the file
+                    image.Save(previewImagePath, new SixLabors.ImageSharp.Formats.Webp.WebpEncoder());
+                }
+
+                foreach (var item in model.DetailImages)
+                {
+                    var imageName = item.FileName;
+                    var imagePath = Path.Combine("wwwroot", "img", "ProductImages", id.ToString(), imageName);
+
+                    Directory.CreateDirectory(Path.GetDirectoryName(imagePath));
+                    
+
+                    using (var image = Image.Load(item.OpenReadStream()))
+                    {
+                        var width = 600;
+                        var height = 600;
+                        image.Mutate(x => x.Resize(width, height));
+
+                        image.Save(imagePath, new SixLabors.ImageSharp.Formats.Webp.WebpEncoder());
+                    }
+
+                    _imageRepo.Add(new Domain.Models.Image
+                    {
+                        ProductId = id,
+                        Link = "/img/ProductImages/" + id.ToString() + "/" + imageName,
+                    });
+                }
+            }
+            catch (Exception ex)
+            {
+                // Handle any exceptions
+                throw new Exception(ex.Message);
+            }
+            
+        }            
+    
         public bool DeleteProduct(int productId)
         {
             throw new NotImplementedException();
@@ -35,7 +99,13 @@ namespace GearClub.Application.Services
 
         public bool DeleteProduct(Product product)
         {
-            throw new NotImplementedException();
+            try
+            {
+                product.Deleted_at = DateTime.UtcNow;
+                UpdateProduct(product);
+                return true;
+            }
+            catch { return false; }
         }
 
         public IEnumerable<Product> FilterProduct(FilterData filter)
@@ -107,7 +177,7 @@ namespace GearClub.Application.Services
                        on product.ProductId equals catePro.ProductId
                        select product;
 
-            return products;
+            return products;            
         }
 
         public IEnumerable<Product> SearchProduct(string? searchString)
@@ -118,12 +188,131 @@ namespace GearClub.Application.Services
 
         public bool UpdateProduct(Product product)
         {
-            throw new NotImplementedException();
+            try
+            {
+                product.Modified_at = DateTime.UtcNow;
+                _productRepo.Update(product);
+                return true;
+            }
+            catch { return false; }
         }
 
-        public bool UpdateProduct(int productId, Product product)
+        //Update with images
+        public bool UpdateProduct(int id, ProductViewModel model)
         {
-            throw new NotImplementedException();
-        }              
+            Product? product = model.Product;
+            if (product == null) return false;
+            if (id != product.ProductId)
+            {
+                return false;
+            }
+
+            var previewImagePath = Path.Combine("wwwroot", "img", "ProductImages", "PreviewImages", id.ToString());
+            var detailImagesPath = Path.Combine("wwwroot", "img", "ProductImages", id.ToString());
+
+            if (model.PreviewImage != null)
+            {
+                try
+                {
+                    //Delete existing files
+                    foreach (var image in Directory.GetFiles(previewImagePath))
+                    {
+                        File.Delete(image);
+                    }
+                    foreach (var image in Directory.GetFiles(detailImagesPath))
+                    {
+                        File.Delete(image);
+                    }
+                    
+
+                    //Add replacements
+                    var filePath = Path.Combine(previewImagePath, "Preview.webp");
+                    
+                    using (var image = Image.Load(model.PreviewImage.OpenReadStream()))
+                    {
+                        var width = 600;
+                        var height = 600;
+                        image.Mutate(x => x.Resize(width, height));
+
+                        // Save the image directly to the file
+                        image.Save(filePath, new SixLabors.ImageSharp.Formats.Webp.WebpEncoder());
+                    }                    
+                }
+                catch (Exception)
+                {
+                    return false;
+                }
+            }
+
+            if (model.DetailImages != null)
+            {
+                try
+                {
+                    foreach (var image in Directory.GetFiles(detailImagesPath))
+                    {
+                        File.Delete(image);
+                    }
+                    foreach (var image in model.Product.Images)
+                    {
+                        _imageRepo.Delete(image);
+                    }
+
+                    foreach (var item in model.DetailImages)
+                    {
+                        var imageName = item.FileName;
+                        var imagePath = Path.Combine("wwwroot", "ProductImages", id.ToString(), imageName);
+
+                        using (var image = Image.Load(item.OpenReadStream()))
+                        {
+                            var width = 600;
+                            var height = 600;
+                            image.Mutate(x => x.Resize(width, height));
+
+                            image.Save(imagePath, new SixLabors.ImageSharp.Formats.Webp.WebpEncoder());
+                        }
+                    }
+                    //Update the image links in Image table
+                    foreach (var link in Directory.GetFiles(detailImagesPath))
+                    {
+                        Domain.Models.Image image = new Domain.Models.Image()
+                        {
+                            Link = link,
+                            ProductId = model.Product.ProductId,
+                        };
+                        _imageRepo.Add(image);
+                    }
+
+                }
+                catch (Exception)
+                {
+                    return false;
+                }
+            }
+
+            try
+            {
+                UpdateProduct(product);
+            }
+            catch (DbUpdateConcurrencyException)
+            {
+                if (!ProductExists(product.ProductId))
+                {
+                    return false;
+                }
+                else
+                {
+                    throw;
+                }
+            }
+            return true;
+
+            
+        }
+
+        //Utility Methods
+        private bool ProductExists(int id)
+        {
+            return _productRepo.GetAll().Any(e => e.ProductId == id);
+        }
     }
 }

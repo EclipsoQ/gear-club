@@ -20,6 +20,9 @@
 
     string checkedOutStatus = Model.IsCheckedOut ? "Đã thanh toán" : "Chưa thanh toán";
     string deliveryStatus = Model.IsDelivered ? "Đã giao hàng" : "Chưa giao hàng";
+
+    TimeZoneInfo localTimeZone = TimeZoneInfo.Local;
+    DateTime localTime = TimeZoneInfo.ConvertTimeFromUtc((DateTime)Model.OrderDate, localTimeZone);
 }
 
 <!-- Breadcrumb Start -->
@@ -47,7 +50,7 @@
                     <b>Mã đơn: </b>@Model.OrderId
                 </li>
                 <li class="list-group-item">
-                    <b>Ngày đặt:</b> @Model.OrderDate
+                    <b>Ngày đặt:</b> @localTime
                 </li>
                 <li class="list-group-item">
                     <b>Thông tin nhận hàng</b>

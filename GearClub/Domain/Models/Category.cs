@@ -12,6 +12,9 @@ namespace GearClub.Domain.Models
         public string Name { get; set; } = null!;
         public virtual ICollection<Category_Product>? Category_Products { get; set; }
         public virtual Image? Image { get; set; }
-
+        public DateTime Created_at { get; set; } = DateTime.UtcNow;
+        public DateTime? Modified_at { get; set; }
+        public DateTime? Deleted_at { get; set; }
+        public bool IsDeleted { get; set; } = false;
     }
 }

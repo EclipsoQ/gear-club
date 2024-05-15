@@ -593,3 +593,8 @@ D:\Programming\BaiTap\DoAn\GearClub\GearClub\bin\Debug\net8.0\System.Web.WebPage
 D:\Programming\BaiTap\DoAn\GearClub\GearClub\bin\Debug\net8.0\System.Web.WebPages.Razor.dll
 D:\Programming\BaiTap\DoAn\GearClub\GearClub\bin\Debug\net8.0\System.Web.WebPages.dll
 D:\Programming\BaiTap\DoAn\GearClub\GearClub\bin\Debug\net8.0\Microsoft.Web.Infrastructure.dll
+D:\Programming\BaiTap\DoAn\GearClub\GearClub\bin\Debug\net8.0\refs\Microsoft.AspNetCore.Cryptography.Internal.dll
+D:\Programming\BaiTap\DoAn\GearClub\GearClub\bin\Debug\net8.0\refs\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+D:\Programming\BaiTap\DoAn\GearClub\GearClub\bin\Debug\net8.0\refs\Microsoft.Extensions.FileProviders.Embedded.dll
+D:\Programming\BaiTap\DoAn\GearClub\GearClub\bin\Debug\net8.0\refs\Microsoft.Extensions.Identity.Core.dll
+D:\Programming\BaiTap\DoAn\GearClub\GearClub\bin\Debug\net8.0\refs\Microsoft.Extensions.Identity.Stores.dll

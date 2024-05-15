@@ -1,0 +1,117 @@
+﻿@model Product
+@{
+    ViewData["Title"] = "Details";
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+
+    TimeZoneInfo localTimeZone = TimeZoneInfo.Local;
+    
+    
+}
+
+<div class="container-fluid pt-4 px-4">
+    <h2 class="text-uppercase">
+        <span class="pr-3">Sản phẩm</span>
+    </h2>
+    <div class="row g-4">
+        <div class="bg-light rounded h-100 p-4">            
+            <ul class="list-group list-group-flush col-md-7 mb-3">
+                <li class="list-group-item bg-primary">
+                    <b class="h4">Thông tin chính</b>                    
+                </li>
+                <li class="list-group-item">
+                    <b>Mã sản phẩm: </b>@Model.ProductId
+                </li>
+                <li class="list-group-item">
+                    <b>Tên sản phẩm: </b> @Model.Name
+                </li>
+                <li class="list-group-item">
+                    <b>Đơn giá: </b>@Model.Price.ToString("###,###,###")₫
+                </li>
+                <li class="list-group-item">
+                    <b>Số lượng tồn kho: </b>@Model.StockQuantity
+                </li>
+                <li class="list-group-item">
+                    <b>Bảo hành: </b>@Model.Warranty
+                </li>
+                <li class="list-group-item">
+                    <b>Mô tả: </b>@Model.Description
+                </li>
+                <li class="list-group-item">
+                    <b>Danh mục:</b> @foreach (var item in Model.Category_Products)
+                    {
+                        <p class="mx-1 mb-0">@item.Category.Name</p>
+                    }                    
+                </li>
+                <li class="list-group-item">
+                    <b>Ảnh xem trước</b><br />
+                    <img src="/img/ProductImages/PreviewImages/@Model.ProductId/Preview.webp" 
+                        width="100" height="100" class="border"/>
+                </li>
+                <li class="list-group-item">
+                    <b>Ảnh chi tiết</b><br />
+                    @if (Model.Images.Count > 0)
+                    {
+                        @foreach (var item in Model.Images)
+                        {
+                            <img src="@item.Link"
+                                 width="100" height="100" class="border p-1" />
+                        }
+                    }
+                    else
+                    {
+                        <p>Chưa có ảnh chi tiết</p>
+                    }
+                </li>
+                <li class="list-group-item">
+                    <b>Tạo lúc: </b> @TimeZoneInfo.ConvertTimeFromUtc((DateTime)Model.Created_at, localTimeZone)
+                </li>
+                @if (Model.Modified_at != null)
+                {
+                    DateTime modifiedTime = TimeZoneInfo.ConvertTimeFromUtc((DateTime)Model.Modified_at, localTimeZone);
+                    <li class="list-group-item">
+                        <b>Sửa lần cuối: </b> @modifiedTime
+                    </li>
+                }
+                @if (Model.Deleted_at != null)
+                {
+                    DateTime deleteTime = TimeZoneInfo.ConvertTimeFromUtc((DateTime)Model.Deleted_at, localTimeZone);
+                    <li class="list-group-item">
+                        <b>Đã xóa lúc: </b> @deleteTime
+                    </li>
+                } 
+            </ul>    
+            
+            <ul class="list-group list-group-flush col-md-7 mb-3">
+                <li class="list-group-item bg-secondary">
+                    <b class="h4">Thông số kỹ thuật </b>
+                </li>
+                <li class="list-group-item">
+                    <b>Hãng sản xuất: </b>@Model.Brand
+                </li>
+                <li class="list-group-item">
+                    <b>Mẫu sản phẩm: </b>@Model.Model
+                </li>
+                @foreach (var item in Model.Specifications)
+                {
+                    <li class="list-group-item">
+                        <b>@item.Name: </b> @item.Content
+                    </li>                    
+                }
+            </ul>
+
+            <div>
+                <a href="/Product/Edit/@Model.ProductId" class="btn btn-primary">Sửa</a> | 
+                <a href="/Product/Delete/@Model.ProductId" class="btn btn-danger">Xóa</a> |
+                @* <form method="post" asp-action="Delete" class="p-0">
+                    <input type="hidden" value="@Model.ProductId"/>
+                    <input type="submit" class="btn btn-danger" value="Xóa" /> |
+                </form> *@
+                <a href="/Product/Index" class="btn btn-secondary">Quay lại</a>
+            </div>
+        </div>
+    
+    </div>
+</div>
+
+
+

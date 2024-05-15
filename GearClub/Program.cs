@@ -51,6 +51,7 @@ builder.Services.AddTransient<IProductService, ProductServices>();
 builder.Services.AddTransient<ICartService, CartService>();
 builder.Services.AddTransient<IOrderService, OrderService>();
 builder.Services.AddTransient<IAddressService, AddressService>();
+builder.Services.AddTransient<ICategoryService, CategoryService>();
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();

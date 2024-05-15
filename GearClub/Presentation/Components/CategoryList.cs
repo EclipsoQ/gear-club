@@ -19,7 +19,7 @@ namespace GearClub.Presentation.Components
 
         public IViewComponentResult Invoke()
         {
-            var categories = _categoryRepository.GetAll();
+            var categories = _categoryRepository.GetAll().Where(c => !c.IsDeleted);
 
             List<CategoryListModel> categoryList = new List<CategoryListModel>();
             foreach (var category in categories)

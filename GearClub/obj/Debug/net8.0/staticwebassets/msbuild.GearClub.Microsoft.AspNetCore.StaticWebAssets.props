@@ -3408,6 +3408,294 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\img\ProductImages\3\image-removebg-preview__41__dde717e254d647aebeecb5dd8902edde_grande.webp))</OriginalItemSpec>
     </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\img\ProductImages\36\arvn-ban-phim-co-akko-3087-v2-ds-horizon-akko-switch-v3-cream-yellow-1_c05cfdb040994f64abdb6b00ff2ed5ae_grande.webp))">
+      <SourceType>Package</SourceType>
+      <SourceId>GearClub</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/GearClub</BasePath>
+      <RelativePath>img/ProductImages/36/arvn-ban-phim-co-akko-3087-v2-ds-horizon-akko-switch-v3-cream-yellow-1_c05cfdb040994f64abdb6b00ff2ed5ae_grande.webp</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\img\ProductImages\36\arvn-ban-phim-co-akko-3087-v2-ds-horizon-akko-switch-v3-cream-yellow-1_c05cfdb040994f64abdb6b00ff2ed5ae_grande.webp))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\img\ProductImages\36\arvn-ban-phim-co-akko-3087-v2-ds-horizon-akko-switch-v3-cream-yellow-2_db71d33a3ce843f68285d974db19084f_grande.webp))">
+      <SourceType>Package</SourceType>
+      <SourceId>GearClub</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/GearClub</BasePath>
+      <RelativePath>img/ProductImages/36/arvn-ban-phim-co-akko-3087-v2-ds-horizon-akko-switch-v3-cream-yellow-2_db71d33a3ce843f68285d974db19084f_grande.webp</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\img\ProductImages\36\arvn-ban-phim-co-akko-3087-v2-ds-horizon-akko-switch-v3-cream-yellow-2_db71d33a3ce843f68285d974db19084f_grande.webp))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\img\ProductImages\36\arvn-ban-phim-co-akko-3087-v2-ds-horizon-akko-switch-v3-cream-yellow-3_e65eb5104d6d401ca3486757e0a63304_grande.webp))">
+      <SourceType>Package</SourceType>
+      <SourceId>GearClub</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/GearClub</BasePath>
+      <RelativePath>img/ProductImages/36/arvn-ban-phim-co-akko-3087-v2-ds-horizon-akko-switch-v3-cream-yellow-3_e65eb5104d6d401ca3486757e0a63304_grande.webp</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\img\ProductImages\36\arvn-ban-phim-co-akko-3087-v2-ds-horizon-akko-switch-v3-cream-yellow-3_e65eb5104d6d401ca3486757e0a63304_grande.webp))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\img\ProductImages\36\arvn-ban-phim-co-akko-3087-v2-ds-horizon-akko-switch-v3-cream-yellow-4_8b2ae65b06ce4187ba96fcd815a34c21_grande.webp))">
+      <SourceType>Package</SourceType>
+      <SourceId>GearClub</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/GearClub</BasePath>
+      <RelativePath>img/ProductImages/36/arvn-ban-phim-co-akko-3087-v2-ds-horizon-akko-switch-v3-cream-yellow-4_8b2ae65b06ce4187ba96fcd815a34c21_grande.webp</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\img\ProductImages\36\arvn-ban-phim-co-akko-3087-v2-ds-horizon-akko-switch-v3-cream-yellow-4_8b2ae65b06ce4187ba96fcd815a34c21_grande.webp))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\img\ProductImages\36\arvn-ban-phim-co-akko-3087-v2-ds-horizon-akko-switch-v3-cream-yellow-5_5b409c97a30043a1a2207c15598ffb2c_grande.webp))">
+      <SourceType>Package</SourceType>
+      <SourceId>GearClub</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/GearClub</BasePath>
+      <RelativePath>img/ProductImages/36/arvn-ban-phim-co-akko-3087-v2-ds-horizon-akko-switch-v3-cream-yellow-5_5b409c97a30043a1a2207c15598ffb2c_grande.webp</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\img\ProductImages\36\arvn-ban-phim-co-akko-3087-v2-ds-horizon-akko-switch-v3-cream-yellow-5_5b409c97a30043a1a2207c15598ffb2c_grande.webp))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\img\ProductImages\36\arvn-ban-phim-co-akko-3087-v2-ds-horizon-akko-switch-v3-cream-yellow-6_1d14b29505584111a934d25c7d8d9d40_grande.webp))">
+      <SourceType>Package</SourceType>
+      <SourceId>GearClub</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/GearClub</BasePath>
+      <RelativePath>img/ProductImages/36/arvn-ban-phim-co-akko-3087-v2-ds-horizon-akko-switch-v3-cream-yellow-6_1d14b29505584111a934d25c7d8d9d40_grande.webp</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\img\ProductImages\36\arvn-ban-phim-co-akko-3087-v2-ds-horizon-akko-switch-v3-cream-yellow-6_1d14b29505584111a934d25c7d8d9d40_grande.webp))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\img\ProductImages\37\arvn-ban-phim-co-akko-3087-v2-ds-horizon-akko-switch-v3-cream-yellow-1_c05cfdb040994f64abdb6b00ff2ed5ae_grande.webp))">
+      <SourceType>Package</SourceType>
+      <SourceId>GearClub</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/GearClub</BasePath>
+      <RelativePath>img/ProductImages/37/arvn-ban-phim-co-akko-3087-v2-ds-horizon-akko-switch-v3-cream-yellow-1_c05cfdb040994f64abdb6b00ff2ed5ae_grande.webp</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\img\ProductImages\37\arvn-ban-phim-co-akko-3087-v2-ds-horizon-akko-switch-v3-cream-yellow-1_c05cfdb040994f64abdb6b00ff2ed5ae_grande.webp))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\img\ProductImages\37\arvn-ban-phim-co-akko-3087-v2-ds-horizon-akko-switch-v3-cream-yellow-2_db71d33a3ce843f68285d974db19084f_grande.webp))">
+      <SourceType>Package</SourceType>
+      <SourceId>GearClub</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/GearClub</BasePath>
+      <RelativePath>img/ProductImages/37/arvn-ban-phim-co-akko-3087-v2-ds-horizon-akko-switch-v3-cream-yellow-2_db71d33a3ce843f68285d974db19084f_grande.webp</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\img\ProductImages\37\arvn-ban-phim-co-akko-3087-v2-ds-horizon-akko-switch-v3-cream-yellow-2_db71d33a3ce843f68285d974db19084f_grande.webp))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\img\ProductImages\37\arvn-ban-phim-co-akko-3087-v2-ds-horizon-akko-switch-v3-cream-yellow-3_e65eb5104d6d401ca3486757e0a63304_grande.webp))">
+      <SourceType>Package</SourceType>
+      <SourceId>GearClub</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/GearClub</BasePath>
+      <RelativePath>img/ProductImages/37/arvn-ban-phim-co-akko-3087-v2-ds-horizon-akko-switch-v3-cream-yellow-3_e65eb5104d6d401ca3486757e0a63304_grande.webp</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\img\ProductImages\37\arvn-ban-phim-co-akko-3087-v2-ds-horizon-akko-switch-v3-cream-yellow-3_e65eb5104d6d401ca3486757e0a63304_grande.webp))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\img\ProductImages\37\arvn-ban-phim-co-akko-3087-v2-ds-horizon-akko-switch-v3-cream-yellow-4_8b2ae65b06ce4187ba96fcd815a34c21_grande.webp))">
+      <SourceType>Package</SourceType>
+      <SourceId>GearClub</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/GearClub</BasePath>
+      <RelativePath>img/ProductImages/37/arvn-ban-phim-co-akko-3087-v2-ds-horizon-akko-switch-v3-cream-yellow-4_8b2ae65b06ce4187ba96fcd815a34c21_grande.webp</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\img\ProductImages\37\arvn-ban-phim-co-akko-3087-v2-ds-horizon-akko-switch-v3-cream-yellow-4_8b2ae65b06ce4187ba96fcd815a34c21_grande.webp))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\img\ProductImages\37\arvn-ban-phim-co-akko-3087-v2-ds-horizon-akko-switch-v3-cream-yellow-5_5b409c97a30043a1a2207c15598ffb2c_grande.webp))">
+      <SourceType>Package</SourceType>
+      <SourceId>GearClub</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/GearClub</BasePath>
+      <RelativePath>img/ProductImages/37/arvn-ban-phim-co-akko-3087-v2-ds-horizon-akko-switch-v3-cream-yellow-5_5b409c97a30043a1a2207c15598ffb2c_grande.webp</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\img\ProductImages\37\arvn-ban-phim-co-akko-3087-v2-ds-horizon-akko-switch-v3-cream-yellow-5_5b409c97a30043a1a2207c15598ffb2c_grande.webp))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\img\ProductImages\37\arvn-ban-phim-co-akko-3087-v2-ds-horizon-akko-switch-v3-cream-yellow-6_1d14b29505584111a934d25c7d8d9d40_grande.webp))">
+      <SourceType>Package</SourceType>
+      <SourceId>GearClub</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/GearClub</BasePath>
+      <RelativePath>img/ProductImages/37/arvn-ban-phim-co-akko-3087-v2-ds-horizon-akko-switch-v3-cream-yellow-6_1d14b29505584111a934d25c7d8d9d40_grande.webp</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\img\ProductImages\37\arvn-ban-phim-co-akko-3087-v2-ds-horizon-akko-switch-v3-cream-yellow-6_1d14b29505584111a934d25c7d8d9d40_grande.webp))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\img\ProductImages\38\arvn-ban-phim-co-akko-3087-v2-ds-horizon-akko-switch-v3-cream-yellow-1_c05cfdb040994f64abdb6b00ff2ed5ae_grande.webp))">
+      <SourceType>Package</SourceType>
+      <SourceId>GearClub</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/GearClub</BasePath>
+      <RelativePath>img/ProductImages/38/arvn-ban-phim-co-akko-3087-v2-ds-horizon-akko-switch-v3-cream-yellow-1_c05cfdb040994f64abdb6b00ff2ed5ae_grande.webp</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\img\ProductImages\38\arvn-ban-phim-co-akko-3087-v2-ds-horizon-akko-switch-v3-cream-yellow-1_c05cfdb040994f64abdb6b00ff2ed5ae_grande.webp))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\img\ProductImages\38\arvn-ban-phim-co-akko-3087-v2-ds-horizon-akko-switch-v3-cream-yellow-2_db71d33a3ce843f68285d974db19084f_grande.webp))">
+      <SourceType>Package</SourceType>
+      <SourceId>GearClub</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/GearClub</BasePath>
+      <RelativePath>img/ProductImages/38/arvn-ban-phim-co-akko-3087-v2-ds-horizon-akko-switch-v3-cream-yellow-2_db71d33a3ce843f68285d974db19084f_grande.webp</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\img\ProductImages\38\arvn-ban-phim-co-akko-3087-v2-ds-horizon-akko-switch-v3-cream-yellow-2_db71d33a3ce843f68285d974db19084f_grande.webp))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\img\ProductImages\38\arvn-ban-phim-co-akko-3087-v2-ds-horizon-akko-switch-v3-cream-yellow-3_e65eb5104d6d401ca3486757e0a63304_grande.webp))">
+      <SourceType>Package</SourceType>
+      <SourceId>GearClub</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/GearClub</BasePath>
+      <RelativePath>img/ProductImages/38/arvn-ban-phim-co-akko-3087-v2-ds-horizon-akko-switch-v3-cream-yellow-3_e65eb5104d6d401ca3486757e0a63304_grande.webp</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\img\ProductImages\38\arvn-ban-phim-co-akko-3087-v2-ds-horizon-akko-switch-v3-cream-yellow-3_e65eb5104d6d401ca3486757e0a63304_grande.webp))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\img\ProductImages\38\arvn-ban-phim-co-akko-3087-v2-ds-horizon-akko-switch-v3-cream-yellow-4_8b2ae65b06ce4187ba96fcd815a34c21_grande.webp))">
+      <SourceType>Package</SourceType>
+      <SourceId>GearClub</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/GearClub</BasePath>
+      <RelativePath>img/ProductImages/38/arvn-ban-phim-co-akko-3087-v2-ds-horizon-akko-switch-v3-cream-yellow-4_8b2ae65b06ce4187ba96fcd815a34c21_grande.webp</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\img\ProductImages\38\arvn-ban-phim-co-akko-3087-v2-ds-horizon-akko-switch-v3-cream-yellow-4_8b2ae65b06ce4187ba96fcd815a34c21_grande.webp))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\img\ProductImages\38\arvn-ban-phim-co-akko-3087-v2-ds-horizon-akko-switch-v3-cream-yellow-5_5b409c97a30043a1a2207c15598ffb2c_grande.webp))">
+      <SourceType>Package</SourceType>
+      <SourceId>GearClub</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/GearClub</BasePath>
+      <RelativePath>img/ProductImages/38/arvn-ban-phim-co-akko-3087-v2-ds-horizon-akko-switch-v3-cream-yellow-5_5b409c97a30043a1a2207c15598ffb2c_grande.webp</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\img\ProductImages\38\arvn-ban-phim-co-akko-3087-v2-ds-horizon-akko-switch-v3-cream-yellow-5_5b409c97a30043a1a2207c15598ffb2c_grande.webp))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\img\ProductImages\38\arvn-ban-phim-co-akko-3087-v2-ds-horizon-akko-switch-v3-cream-yellow-6_1d14b29505584111a934d25c7d8d9d40_grande.webp))">
+      <SourceType>Package</SourceType>
+      <SourceId>GearClub</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/GearClub</BasePath>
+      <RelativePath>img/ProductImages/38/arvn-ban-phim-co-akko-3087-v2-ds-horizon-akko-switch-v3-cream-yellow-6_1d14b29505584111a934d25c7d8d9d40_grande.webp</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\img\ProductImages\38\arvn-ban-phim-co-akko-3087-v2-ds-horizon-akko-switch-v3-cream-yellow-6_1d14b29505584111a934d25c7d8d9d40_grande.webp))</OriginalItemSpec>
+    </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\img\ProductImages\5\gearvn-man-hinh-lg-24gn65r-b-24-ips-144hz-hdr10-freesync-chuyen-game-1_17472a08b2b44187bd178b349185fbbd_grande.webp))">
       <SourceType>Package</SourceType>
       <SourceId>GearClub</SourceId>
@@ -4096,6 +4384,22 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\img\ProductImages\9\inh-viewsonic-va2215-h-22-75hz-fhd-18_80f945f6003e4df387a147b0ec597acf_a444bf0abe6641518c6490c0dcde2d4d_grande.webp))</OriginalItemSpec>
     </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\img\ProductImages\CategoryImages\0.webp))">
+      <SourceType>Package</SourceType>
+      <SourceId>GearClub</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/GearClub</BasePath>
+      <RelativePath>img/ProductImages/CategoryImages/0.webp</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\img\ProductImages\CategoryImages\0.webp))</OriginalItemSpec>
+    </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\img\ProductImages\CategoryImages\1.jpg))">
       <SourceType>Package</SourceType>
       <SourceId>GearClub</SourceId>
@@ -4191,6 +4495,38 @@
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\img\ProductImages\CategoryImages\6.jpg))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\img\ProductImages\CategoryImages\7.jpg))">
+      <SourceType>Package</SourceType>
+      <SourceId>GearClub</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/GearClub</BasePath>
+      <RelativePath>img/ProductImages/CategoryImages/7.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\img\ProductImages\CategoryImages\7.jpg))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\img\ProductImages\CategoryImages\8.webp))">
+      <SourceType>Package</SourceType>
+      <SourceId>GearClub</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/GearClub</BasePath>
+      <RelativePath>img/ProductImages/CategoryImages/8.webp</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\img\ProductImages\CategoryImages\8.webp))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\img\ProductImages\PreviewImages\1\Preview.webp))">
       <SourceType>Package</SourceType>
@@ -4511,6 +4847,70 @@
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\img\ProductImages\PreviewImages\3\Preview.webp))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\img\ProductImages\PreviewImages\36\Preview.webp))">
+      <SourceType>Package</SourceType>
+      <SourceId>GearClub</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/GearClub</BasePath>
+      <RelativePath>img/ProductImages/PreviewImages/36/Preview.webp</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\img\ProductImages\PreviewImages\36\Preview.webp))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\img\ProductImages\PreviewImages\37\Preview.webp))">
+      <SourceType>Package</SourceType>
+      <SourceId>GearClub</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/GearClub</BasePath>
+      <RelativePath>img/ProductImages/PreviewImages/37/Preview.webp</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\img\ProductImages\PreviewImages\37\Preview.webp))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\img\ProductImages\PreviewImages\38\Preview.webp))">
+      <SourceType>Package</SourceType>
+      <SourceId>GearClub</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/GearClub</BasePath>
+      <RelativePath>img/ProductImages/PreviewImages/38/Preview.webp</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\img\ProductImages\PreviewImages\38\Preview.webp))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\img\ProductImages\PreviewImages\39\Preview.webp))">
+      <SourceType>Package</SourceType>
+      <SourceId>GearClub</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/GearClub</BasePath>
+      <RelativePath>img/ProductImages/PreviewImages/39/Preview.webp</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\img\ProductImages\PreviewImages\39\Preview.webp))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\img\ProductImages\PreviewImages\5\Preview.webp))">
       <SourceType>Package</SourceType>
@@ -4879,6 +5279,22 @@
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\js\order.js))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\js\product\edit.js))">
+      <SourceType>Package</SourceType>
+      <SourceId>GearClub</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/GearClub</BasePath>
+      <RelativePath>js/product/edit.js</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\js\product\edit.js))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\js\site.js))">
       <SourceType>Package</SourceType>

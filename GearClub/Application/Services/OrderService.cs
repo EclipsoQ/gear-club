@@ -104,7 +104,7 @@ namespace GearClub.Application.Services
                     product.StockQuantity -= item.Quantity;
                     _producRepo.Update(product);
 
-                    subtotal += item.Quantity + item.Product.Price;
+                    subtotal += item.Quantity * item.Product.Price;
                     _orderDetailRepo.Add(orderDetail);
                 }
 

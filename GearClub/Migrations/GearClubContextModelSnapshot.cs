@@ -139,7 +139,7 @@ namespace GearClub.Migrations
 
                     b.HasIndex("UserId");
 
-                    b.ToTable("Addresses");
+                    b.ToTable("Addresses", (string)null);
                 });
 
             modelBuilder.Entity("GearClub.Domain.Models.Cart", b =>
@@ -161,7 +161,7 @@ namespace GearClub.Migrations
 
                     b.HasIndex("UserId");
 
-                    b.ToTable("Carts");
+                    b.ToTable("Carts", (string)null);
                 });
 
             modelBuilder.Entity("GearClub.Domain.Models.CartDetail", b =>
@@ -187,7 +187,7 @@ namespace GearClub.Migrations
 
                     b.HasIndex("ProductId");
 
-                    b.ToTable("CartDetails");
+                    b.ToTable("CartDetails", (string)null);
                 });
 
             modelBuilder.Entity("GearClub.Domain.Models.Category", b =>
@@ -198,6 +198,18 @@ namespace GearClub.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("CategoryId"));
 
+                    b.Property<DateTime>("Created_at")
+                        .HasColumnType("datetime2");
+
+                    b.Property<DateTime?>("Deleted_at")
+                        .HasColumnType("datetime2");
+
+                    b.Property<bool>("IsDeleted")
+                        .HasColumnType("bit");
+
+                    b.Property<DateTime?>("Modified_at")
+                        .HasColumnType("datetime2");
+
                     b.Property<string>("Name")
                         .IsRequired()
                         .HasMaxLength(50)
@@ -205,7 +217,7 @@ namespace GearClub.Migrations
 
                     b.HasKey("CategoryId");
 
-                    b.ToTable("Categories");
+                    b.ToTable("Categories", (string)null);
                 });
 
             modelBuilder.Entity("GearClub.Domain.Models.Category_Product", b =>
@@ -228,7 +240,7 @@ namespace GearClub.Migrations
 
                     b.HasIndex("ProductId");
 
-                    b.ToTable("Category_Products");
+                    b.ToTable("Category_Products", (string)null);
                 });
 
             modelBuilder.Entity("GearClub.Domain.Models.Image", b =>
@@ -256,7 +268,7 @@ namespace GearClub.Migrations
 
                     b.HasIndex("ProductId");
 
-                    b.ToTable("Images");
+                    b.ToTable("Images", (string)null);
                 });
 
             modelBuilder.Entity("GearClub.Domain.Models.Order", b =>
@@ -295,7 +307,7 @@ namespace GearClub.Migrations
 
                     b.HasIndex("AddressId");
 
-                    b.ToTable("Orders");
+                    b.ToTable("Orders", (string)null);
                 });
 
             modelBuilder.Entity("GearClub.Domain.Models.OrderDetail", b =>
@@ -321,7 +333,7 @@ namespace GearClub.Migrations
 
                     b.HasIndex("ProductId");
 
-                    b.ToTable("OrderDetails");
+                    b.ToTable("OrderDetails", (string)null);
                 });
 
             modelBuilder.Entity("GearClub.Domain.Models.Product", b =>
@@ -337,6 +349,12 @@ namespace GearClub.Migrations
                         .HasMaxLength(50)
                         .HasColumnType("nvarchar(50)");
 
+                    b.Property<DateTime?>("Created_at")
+                        .HasColumnType("datetime2");
+
+                    b.Property<DateTime?>("Deleted_at")
+                        .HasColumnType("datetime2");
+
                     b.Property<string>("Description")
                         .HasColumnType("ntext");
 
@@ -344,6 +362,9 @@ namespace GearClub.Migrations
                         .IsRequired()
                         .HasMaxLength(50)
                         .HasColumnType("nvarchar(50)");
+
+                    b.Property<DateTime?>("Modified_at")
+                        .HasColumnType("datetime2");
 
                     b.Property<string>("Name")
                         .IsRequired()
@@ -361,7 +382,10 @@ namespace GearClub.Migrations
 
                     b.HasKey("ProductId");
 
-                    b.ToTable("Products");
+                    b.HasIndex("Name")
+                        .IsUnique();
+
+                    b.ToTable("Products", (string)null);
                 });
 
             modelBuilder.Entity("GearClub.Domain.Models.Specification", b =>
@@ -387,7 +411,7 @@ namespace GearClub.Migrations
 
                     b.HasIndex("ProductId");
 
-                    b.ToTable("Specifications");
+                    b.ToTable("Specifications", (string)null);
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRole", b =>

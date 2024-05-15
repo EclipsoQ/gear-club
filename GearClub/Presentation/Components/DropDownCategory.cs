@@ -13,7 +13,7 @@ namespace GearClub.Presentation.Components
         }
         public IViewComponentResult Invoke()
         {
-            return View(_repository.GetAll());
+            return View(_repository.GetAll().Where(c => !c.IsDeleted));
         }
     }
 }

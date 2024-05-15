@@ -1,0 +1,56 @@
+﻿@model IEnumerable<GearClub.Domain.Models.Category>
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+<div class="container-fluid pt-4 px-4">
+    <h2 class="text-uppercase">
+        <span class="pr-3">Danh mục</span>
+    </h2>
+    <div>
+        <a href="/Category/Create" class="btn btn-primary mb-2">Tạo mới</a>
+    </div>
+    <div class="row g-4">
+        <div class="bg-light rounded h-100 p-4">
+            <table class="table table-bordered table-hover">
+                <thead>
+                    <tr>                        
+                        <th class="col-md-5">
+                            Tên danh mục
+                        </th>                        
+                        <th style="text-align: center">
+                            Ảnh xem trước
+                        </th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>                    
+                    @foreach (var item in Model)
+                    {                        
+                        <tr>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.Name)
+                            </td>
+                            <td align="center">
+                                @if (item.Image == null)
+                                {
+                                    <span>Chưa có ảnh</span>
+                                } else
+                                {
+                                    <img src="@item.Image?.Link" width="100" height="100"/>
+                                }                                
+                            </td>
+                            <td class="align-middle" align="center">
+                                <a asp-action="Edit" asp-route-id="@item.CategoryId">Sửa</a> |
+                                <a asp-action="Details" asp-route-id="@item.CategoryId">Chi tiết</a> |
+                                <a asp-action="Delete" asp-route-id="@item.CategoryId">Xóa</a>
+                            </td>
+                        </tr>                        
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>

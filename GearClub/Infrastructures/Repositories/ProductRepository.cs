@@ -1,6 +1,7 @@
 ﻿using GearClub.Data;
 using GearClub.Domain.Models;
 using GearClub.Domain.RepoInterfaces;
+using Microsoft.EntityFrameworkCore;
 
 namespace GearClub.Infrastructures.Repositories
 {
@@ -34,9 +35,13 @@ namespace GearClub.Infrastructures.Repositories
             return _context.Products.ToList();
         }
 
-        public Product GetById(int id)
+        public Product? GetById(int id)
         {
-            return _context.Products.FirstOrDefault(p => p.ProductId == id);
+            return _context.Products.Include(p => p.Specifications)
+                                    .Include(p => p.Images)
+                                    .Include(p => p.Category_Products)
+                                    .ThenInclude(c => c.Category)
+                                    .FirstOrDefault(p => p.ProductId == id);
         }
 
         public void SaveChanges()
