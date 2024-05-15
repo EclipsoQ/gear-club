@@ -199,12 +199,12 @@ namespace GearClub.Application.Services
 
         //Update with images
         public bool UpdateProduct(int id, ProductViewModel model)
-        {
-            Product? product = model.Product;
-            if (product == null) return false;
-            if (id != product.ProductId)
+        {            
+            var product = _productRepo.GetById(id);
+            if (product == null) throw new ArgumentNullException();
+            if (model.Product.ProductId != product.ProductId)
             {
-                return false;
+                throw new InvalidDataException();
             }
 
             var previewImagePath = Path.Combine("wwwroot", "img", "ProductImages", "PreviewImages", id.ToString());
@@ -214,16 +214,18 @@ namespace GearClub.Application.Services
             {
                 try
                 {
+                    //Check if there are any existing image files
+                    if (!Directory.Exists(previewImagePath))
+                    {
+                        //if no create a new one
+                        Directory.CreateDirectory(previewImagePath);
+                    }                    
+
                     //Delete existing files
                     foreach (var image in Directory.GetFiles(previewImagePath))
                     {
                         File.Delete(image);
-                    }
-                    foreach (var image in Directory.GetFiles(detailImagesPath))
-                    {
-                        File.Delete(image);
-                    }
-                    
+                    }                                        
 
                     //Add replacements
                     var filePath = Path.Combine(previewImagePath, "Preview.webp");
@@ -238,9 +240,9 @@ namespace GearClub.Application.Services
                         image.Save(filePath, new SixLabors.ImageSharp.Formats.Webp.WebpEncoder());
                     }                    
                 }
-                catch (Exception)
+                catch (Exception ex)
                 {
-                    return false;
+                    throw new Exception(ex.Message, ex);
                 }
             }
 
@@ -248,19 +250,38 @@ namespace GearClub.Application.Services
             {
                 try
                 {
-                    foreach (var image in Directory.GetFiles(detailImagesPath))
+                    //Check if the directory exists
+                    if (!Directory.Exists(detailImagesPath))
                     {
-                        File.Delete(image);
+                        //If no, create a new one
+                        Directory.CreateDirectory(detailImagesPath);
+                    }                    
+                    else
+                    {
+                        //If yes, delete the existing files   
+                        foreach (var image in Directory.GetFiles(detailImagesPath))
+                        {
+                            //Delete from the directory
+                            File.Delete(image);
+                        }                        
                     }
-                    foreach (var image in model.Product.Images)
+
+                    //Create a copy of the product images in order to delete them since you cant
+                    //modify a collection (foreach and List<T>) while iterating over it 
+
+                    //Can use for loop instead 
+                    var temp = product.Images.ToList();
+                    foreach (var image in temp)
                     {
+                        //Delete from the Image table
                         _imageRepo.Delete(image);
                     }
 
+                    //Add replacements
                     foreach (var item in model.DetailImages)
                     {
                         var imageName = item.FileName;
-                        var imagePath = Path.Combine("wwwroot", "ProductImages", id.ToString(), imageName);
+                        var imagePath = Path.Combine("wwwroot", "img", "ProductImages", id.ToString(), imageName);
 
                         using (var image = Image.Load(item.OpenReadStream()))
                         {
@@ -270,22 +291,20 @@ namespace GearClub.Application.Services
 
                             image.Save(imagePath, new SixLabors.ImageSharp.Formats.Webp.WebpEncoder());
                         }
-                    }
-                    //Update the image links in Image table
-                    foreach (var link in Directory.GetFiles(detailImagesPath))
-                    {
-                        Domain.Models.Image image = new Domain.Models.Image()
+
+                        //Update the image links in Image table
+                        Domain.Models.Image newImage = new Domain.Models.Image()
                         {
-                            Link = link,
+                            Link = "/img/ProductImages/" + id.ToString() + "/" + imageName,
                             ProductId = model.Product.ProductId,
                         };
-                        _imageRepo.Add(image);
+                        _imageRepo.Add(newImage);
                     }
-
+                                        
                 }
-                catch (Exception)
+                catch (Exception ex)
                 {
-                    return false;
+                    throw new Exception(ex.Message, ex);
                 }
             }
 
@@ -293,11 +312,11 @@ namespace GearClub.Application.Services
             {
                 UpdateProduct(product);
             }
-            catch (DbUpdateConcurrencyException)
+            catch (DbUpdateConcurrencyException ex)
             {
                 if (!ProductExists(product.ProductId))
                 {
-                    return false;
+                    throw new Exception(ex.Message, ex);
                 }
                 else
                 {

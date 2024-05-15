@@ -103,7 +103,7 @@ namespace GearClub.Presentation.Controllers
                 {
                     return RedirectToAction("Index");
                 }
-                return View();
+                return View(model);
             }
             return View("UnauthorizedView");
         }

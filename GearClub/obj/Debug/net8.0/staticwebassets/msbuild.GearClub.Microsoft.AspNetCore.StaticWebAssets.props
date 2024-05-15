@@ -2064,102 +2064,6 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\img\payments.png))</OriginalItemSpec>
     </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\img\ProductImages\1\an-hinh-asus-tuf-gaming-vg249q3a-24-fast-ips-180hz-gsync-chuyen-game-1_ecdcc5cbd7c14e7dab86c41c7f68969b_grande.webp))">
-      <SourceType>Package</SourceType>
-      <SourceId>GearClub</SourceId>
-      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/GearClub</BasePath>
-      <RelativePath>img/ProductImages/1/an-hinh-asus-tuf-gaming-vg249q3a-24-fast-ips-180hz-gsync-chuyen-game-1_ecdcc5cbd7c14e7dab86c41c7f68969b_grande.webp</RelativePath>
-      <AssetKind>All</AssetKind>
-      <AssetMode>All</AssetMode>
-      <AssetRole>Primary</AssetRole>
-      <RelatedAsset></RelatedAsset>
-      <AssetTraitName></AssetTraitName>
-      <AssetTraitValue></AssetTraitValue>
-      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\img\ProductImages\1\an-hinh-asus-tuf-gaming-vg249q3a-24-fast-ips-180hz-gsync-chuyen-game-1_ecdcc5cbd7c14e7dab86c41c7f68969b_grande.webp))</OriginalItemSpec>
-    </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\img\ProductImages\1\an-hinh-asus-tuf-gaming-vg249q3a-24-fast-ips-180hz-gsync-chuyen-game-2_b81575a9d2a04336a21a40570c2bd4b1_grande.webp))">
-      <SourceType>Package</SourceType>
-      <SourceId>GearClub</SourceId>
-      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/GearClub</BasePath>
-      <RelativePath>img/ProductImages/1/an-hinh-asus-tuf-gaming-vg249q3a-24-fast-ips-180hz-gsync-chuyen-game-2_b81575a9d2a04336a21a40570c2bd4b1_grande.webp</RelativePath>
-      <AssetKind>All</AssetKind>
-      <AssetMode>All</AssetMode>
-      <AssetRole>Primary</AssetRole>
-      <RelatedAsset></RelatedAsset>
-      <AssetTraitName></AssetTraitName>
-      <AssetTraitValue></AssetTraitValue>
-      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\img\ProductImages\1\an-hinh-asus-tuf-gaming-vg249q3a-24-fast-ips-180hz-gsync-chuyen-game-2_b81575a9d2a04336a21a40570c2bd4b1_grande.webp))</OriginalItemSpec>
-    </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\img\ProductImages\1\an-hinh-asus-tuf-gaming-vg249q3a-24-fast-ips-180hz-gsync-chuyen-game-3_b1e270a493db41ecadf1de2ac38d3dbd_grande.webp))">
-      <SourceType>Package</SourceType>
-      <SourceId>GearClub</SourceId>
-      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/GearClub</BasePath>
-      <RelativePath>img/ProductImages/1/an-hinh-asus-tuf-gaming-vg249q3a-24-fast-ips-180hz-gsync-chuyen-game-3_b1e270a493db41ecadf1de2ac38d3dbd_grande.webp</RelativePath>
-      <AssetKind>All</AssetKind>
-      <AssetMode>All</AssetMode>
-      <AssetRole>Primary</AssetRole>
-      <RelatedAsset></RelatedAsset>
-      <AssetTraitName></AssetTraitName>
-      <AssetTraitValue></AssetTraitValue>
-      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\img\ProductImages\1\an-hinh-asus-tuf-gaming-vg249q3a-24-fast-ips-180hz-gsync-chuyen-game-3_b1e270a493db41ecadf1de2ac38d3dbd_grande.webp))</OriginalItemSpec>
-    </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\img\ProductImages\1\an-hinh-asus-tuf-gaming-vg249q3a-24-fast-ips-180hz-gsync-chuyen-game-4_45abb9c985d44f50815b86c49692cd3f_grande.webp))">
-      <SourceType>Package</SourceType>
-      <SourceId>GearClub</SourceId>
-      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/GearClub</BasePath>
-      <RelativePath>img/ProductImages/1/an-hinh-asus-tuf-gaming-vg249q3a-24-fast-ips-180hz-gsync-chuyen-game-4_45abb9c985d44f50815b86c49692cd3f_grande.webp</RelativePath>
-      <AssetKind>All</AssetKind>
-      <AssetMode>All</AssetMode>
-      <AssetRole>Primary</AssetRole>
-      <RelatedAsset></RelatedAsset>
-      <AssetTraitName></AssetTraitName>
-      <AssetTraitValue></AssetTraitValue>
-      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\img\ProductImages\1\an-hinh-asus-tuf-gaming-vg249q3a-24-fast-ips-180hz-gsync-chuyen-game-4_45abb9c985d44f50815b86c49692cd3f_grande.webp))</OriginalItemSpec>
-    </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\img\ProductImages\1\an-hinh-asus-tuf-gaming-vg249q3a-24-fast-ips-180hz-gsync-chuyen-game-5_5006196929b441638cb608c13d733aa3_grande.webp))">
-      <SourceType>Package</SourceType>
-      <SourceId>GearClub</SourceId>
-      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/GearClub</BasePath>
-      <RelativePath>img/ProductImages/1/an-hinh-asus-tuf-gaming-vg249q3a-24-fast-ips-180hz-gsync-chuyen-game-5_5006196929b441638cb608c13d733aa3_grande.webp</RelativePath>
-      <AssetKind>All</AssetKind>
-      <AssetMode>All</AssetMode>
-      <AssetRole>Primary</AssetRole>
-      <RelatedAsset></RelatedAsset>
-      <AssetTraitName></AssetTraitName>
-      <AssetTraitValue></AssetTraitValue>
-      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\img\ProductImages\1\an-hinh-asus-tuf-gaming-vg249q3a-24-fast-ips-180hz-gsync-chuyen-game-5_5006196929b441638cb608c13d733aa3_grande.webp))</OriginalItemSpec>
-    </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\img\ProductImages\1\an-hinh-asus-tuf-gaming-vg249q3a-24-fast-ips-180hz-gsync-chuyen-game-6_316c04b4f76c496db90875337ecacc8e_grande.webp))">
-      <SourceType>Package</SourceType>
-      <SourceId>GearClub</SourceId>
-      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/GearClub</BasePath>
-      <RelativePath>img/ProductImages/1/an-hinh-asus-tuf-gaming-vg249q3a-24-fast-ips-180hz-gsync-chuyen-game-6_316c04b4f76c496db90875337ecacc8e_grande.webp</RelativePath>
-      <AssetKind>All</AssetKind>
-      <AssetMode>All</AssetMode>
-      <AssetRole>Primary</AssetRole>
-      <RelatedAsset></RelatedAsset>
-      <AssetTraitName></AssetTraitName>
-      <AssetTraitValue></AssetTraitValue>
-      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\img\ProductImages\1\an-hinh-asus-tuf-gaming-vg249q3a-24-fast-ips-180hz-gsync-chuyen-game-6_316c04b4f76c496db90875337ecacc8e_grande.webp))</OriginalItemSpec>
-    </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\img\ProductImages\10\inh-dell-ultrasharp-u2722de-27-inch-2_fd939fa31310487cb67e6f52c7599765_fff6c82b78874a539d1d7aefcc464860_grande.webp))">
       <SourceType>Package</SourceType>
       <SourceId>GearClub</SourceId>
@@ -3696,6 +3600,166 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\img\ProductImages\38\arvn-ban-phim-co-akko-3087-v2-ds-horizon-akko-switch-v3-cream-yellow-6_1d14b29505584111a934d25c7d8d9d40_grande.webp))</OriginalItemSpec>
     </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\img\ProductImages\40\mb24v9_mb27v9-02 (1).webp))">
+      <SourceType>Package</SourceType>
+      <SourceId>GearClub</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/GearClub</BasePath>
+      <RelativePath>img/ProductImages/40/mb24v9_mb27v9-02 (1).webp</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\img\ProductImages\40\mb24v9_mb27v9-02 (1).webp))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\img\ProductImages\40\mb24v9_mb27v9-02.webp))">
+      <SourceType>Package</SourceType>
+      <SourceId>GearClub</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/GearClub</BasePath>
+      <RelativePath>img/ProductImages/40/mb24v9_mb27v9-02.webp</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\img\ProductImages\40\mb24v9_mb27v9-02.webp))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\img\ProductImages\40\mb24v9_mb27v9-02_1582d3118a02442f99256b815a4ddb44_grande.webp))">
+      <SourceType>Package</SourceType>
+      <SourceId>GearClub</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/GearClub</BasePath>
+      <RelativePath>img/ProductImages/40/mb24v9_mb27v9-02_1582d3118a02442f99256b815a4ddb44_grande.webp</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\img\ProductImages\40\mb24v9_mb27v9-02_1582d3118a02442f99256b815a4ddb44_grande.webp))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\img\ProductImages\40\mb24v9_mb27v9-03_b0c551d0f5204a028c76b33e13f54dea_grande.webp))">
+      <SourceType>Package</SourceType>
+      <SourceId>GearClub</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/GearClub</BasePath>
+      <RelativePath>img/ProductImages/40/mb24v9_mb27v9-03_b0c551d0f5204a028c76b33e13f54dea_grande.webp</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\img\ProductImages\40\mb24v9_mb27v9-03_b0c551d0f5204a028c76b33e13f54dea_grande.webp))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\img\ProductImages\40\mb24v9_mb27v9-04_a12375dc80fe480183172a6fe29384a6_grande.webp))">
+      <SourceType>Package</SourceType>
+      <SourceId>GearClub</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/GearClub</BasePath>
+      <RelativePath>img/ProductImages/40/mb24v9_mb27v9-04_a12375dc80fe480183172a6fe29384a6_grande.webp</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\img\ProductImages\40\mb24v9_mb27v9-04_a12375dc80fe480183172a6fe29384a6_grande.webp))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\img\ProductImages\40\mb24v9_mb27v9-05_81ff2b9c5ecf4e5eb5f932853335f4f8_grande.webp))">
+      <SourceType>Package</SourceType>
+      <SourceId>GearClub</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/GearClub</BasePath>
+      <RelativePath>img/ProductImages/40/mb24v9_mb27v9-05_81ff2b9c5ecf4e5eb5f932853335f4f8_grande.webp</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\img\ProductImages\40\mb24v9_mb27v9-05_81ff2b9c5ecf4e5eb5f932853335f4f8_grande.webp))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\img\ProductImages\40\mb24v9_mb27v9-06_3e3636b148774fb5ba8cd486783880a2_grande.webp))">
+      <SourceType>Package</SourceType>
+      <SourceId>GearClub</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/GearClub</BasePath>
+      <RelativePath>img/ProductImages/40/mb24v9_mb27v9-06_3e3636b148774fb5ba8cd486783880a2_grande.webp</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\img\ProductImages\40\mb24v9_mb27v9-06_3e3636b148774fb5ba8cd486783880a2_grande.webp))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\img\ProductImages\40\mb24v9_mb27v9-07_937f898874fd47609db69f9d88ae029b_grande.webp))">
+      <SourceType>Package</SourceType>
+      <SourceId>GearClub</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/GearClub</BasePath>
+      <RelativePath>img/ProductImages/40/mb24v9_mb27v9-07_937f898874fd47609db69f9d88ae029b_grande.webp</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\img\ProductImages\40\mb24v9_mb27v9-07_937f898874fd47609db69f9d88ae029b_grande.webp))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\img\ProductImages\40\mb24v9_mb27v9-08_e0630536fae34cb8bb3d4809eed4c875_grande.webp))">
+      <SourceType>Package</SourceType>
+      <SourceId>GearClub</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/GearClub</BasePath>
+      <RelativePath>img/ProductImages/40/mb24v9_mb27v9-08_e0630536fae34cb8bb3d4809eed4c875_grande.webp</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\img\ProductImages\40\mb24v9_mb27v9-08_e0630536fae34cb8bb3d4809eed4c875_grande.webp))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\img\ProductImages\40\mb24v9_mb27v9-09_efac7aa1915f4c53bd16b1d994b2bab0_grande.webp))">
+      <SourceType>Package</SourceType>
+      <SourceId>GearClub</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/GearClub</BasePath>
+      <RelativePath>img/ProductImages/40/mb24v9_mb27v9-09_efac7aa1915f4c53bd16b1d994b2bab0_grande.webp</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\img\ProductImages\40\mb24v9_mb27v9-09_efac7aa1915f4c53bd16b1d994b2bab0_grande.webp))</OriginalItemSpec>
+    </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\img\ProductImages\5\gearvn-man-hinh-lg-24gn65r-b-24-ips-144hz-hdr10-freesync-chuyen-game-1_17472a08b2b44187bd178b349185fbbd_grande.webp))">
       <SourceType>Package</SourceType>
       <SourceId>GearClub</SourceId>
@@ -4911,6 +4975,22 @@
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\img\ProductImages\PreviewImages\39\Preview.webp))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\img\ProductImages\PreviewImages\40\Preview.webp))">
+      <SourceType>Package</SourceType>
+      <SourceId>GearClub</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/GearClub</BasePath>
+      <RelativePath>img/ProductImages/PreviewImages/40/Preview.webp</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\img\ProductImages\PreviewImages\40\Preview.webp))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\img\ProductImages\PreviewImages\5\Preview.webp))">
       <SourceType>Package</SourceType>
